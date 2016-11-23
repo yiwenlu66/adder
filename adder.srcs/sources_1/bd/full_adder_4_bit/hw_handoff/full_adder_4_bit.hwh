@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Nov 24 01:24:34 2016" VIVADOVERSION="2016.3">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="full_adder_4_bit" PACKAGE="cpg236" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="A0" SIGIS="undef" SIGNAME="External_Ports_A0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="full_adder_1_bit_0" PORT="A"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="A1" SIGIS="undef" SIGNAME="External_Ports_A1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="full_adder_1_bit_1" PORT="A"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="A2" SIGIS="undef" SIGNAME="External_Ports_A2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="full_adder_1_bit_2" PORT="A"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="A3" SIGIS="undef" SIGNAME="External_Ports_A3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="full_adder_1_bit_3" PORT="A"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="B0" SIGIS="undef" SIGNAME="External_Ports_B0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="full_adder_1_bit_0" PORT="B"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="B1" SIGIS="undef" SIGNAME="External_Ports_B1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="full_adder_1_bit_1" PORT="B"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="B2" SIGIS="undef" SIGNAME="External_Ports_B2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="full_adder_1_bit_2" PORT="B"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="B3" SIGIS="undef" SIGNAME="External_Ports_B3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="full_adder_1_bit_3" PORT="B"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="S0" SIGIS="undef" SIGNAME="full_adder_1_bit_0_S">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="full_adder_1_bit_0" PORT="S"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="S1" SIGIS="undef" SIGNAME="full_adder_1_bit_1_S">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="full_adder_1_bit_1" PORT="S"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="S2" SIGIS="undef" SIGNAME="full_adder_1_bit_2_S">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="full_adder_1_bit_2" PORT="S"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="S3" SIGIS="undef" SIGNAME="full_adder_1_bit_3_S">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="full_adder_1_bit_3" PORT="S"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CO" SIGIS="undef" SIGNAME="full_adder_1_bit_3_CO">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="full_adder_1_bit_3" PORT="CO"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/full_adder_1_bit_0" HWVERSION="1.0" INSTANCE="full_adder_1_bit_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="full_adder_1_bit" VLNV="xilinx.com:user:full_adder_1_bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="full_adder_4_bit_full_adder_1_bit_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="External_Ports_A0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="A0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="External_Ports_B0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="B0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CI" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CO" SIGIS="undef" SIGNAME="full_adder_1_bit_0_CO">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="full_adder_1_bit_1" PORT="CI"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S" SIGIS="undef" SIGNAME="full_adder_1_bit_0_S">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/full_adder_1_bit_1" HWVERSION="1.0" INSTANCE="full_adder_1_bit_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="full_adder_1_bit" VLNV="xilinx.com:user:full_adder_1_bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="full_adder_4_bit_full_adder_1_bit_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="External_Ports_A1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="A1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="External_Ports_B1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="B1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CI" SIGIS="undef" SIGNAME="full_adder_1_bit_0_CO">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="full_adder_1_bit_0" PORT="CO"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CO" SIGIS="undef" SIGNAME="full_adder_1_bit_1_CO">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="full_adder_1_bit_2" PORT="CI"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S" SIGIS="undef" SIGNAME="full_adder_1_bit_1_S">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/full_adder_1_bit_2" HWVERSION="1.0" INSTANCE="full_adder_1_bit_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="full_adder_1_bit" VLNV="xilinx.com:user:full_adder_1_bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="full_adder_4_bit_full_adder_1_bit_0_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="External_Ports_A2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="A2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="External_Ports_B2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="B2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CI" SIGIS="undef" SIGNAME="full_adder_1_bit_1_CO">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="full_adder_1_bit_1" PORT="CO"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CO" SIGIS="undef" SIGNAME="full_adder_1_bit_2_CO">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="full_adder_1_bit_3" PORT="CI"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S" SIGIS="undef" SIGNAME="full_adder_1_bit_2_S">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/full_adder_1_bit_3" HWVERSION="1.0" INSTANCE="full_adder_1_bit_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="full_adder_1_bit" VLNV="xilinx.com:user:full_adder_1_bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="full_adder_4_bit_full_adder_1_bit_0_3"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A" SIGIS="undef" SIGNAME="External_Ports_A3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="A3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B" SIGIS="undef" SIGNAME="External_Ports_B3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="B3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CI" SIGIS="undef" SIGNAME="full_adder_1_bit_2_CO">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="full_adder_1_bit_2" PORT="CO"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CO" SIGIS="undef" SIGNAME="full_adder_1_bit_3_CO">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CO"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S" SIGIS="undef" SIGNAME="full_adder_1_bit_3_S">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/xlconstant_0" HWVERSION="1.1" INSTANCE="xlconstant_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="0"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="full_adder_4_bit_xlconstant_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="full_adder_1_bit_0" PORT="CI"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

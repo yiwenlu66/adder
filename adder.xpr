@@ -19,8 +19,9 @@
     <Option Name="BoardPart" Val=""/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/ip"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../mux21/74LSXX_LIB"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/ip_full_adder_1_bit"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/ip_full_adder_4_bit"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../mux21/XUP_LIB"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
@@ -31,7 +32,7 @@
     <Option Name="IPStaticSourceDir" Val="$PPRDIR/adder.ip_user_files/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSANumComputeUnits" Val="16"/>
-    <Option Name="WTXSimLaunchSim" Val="1"/>
+    <Option Name="WTXSimLaunchSim" Val="16"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -85,6 +86,40 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/bd/full_adder_4_bit/full_adder_4_bit.bd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="hdl/full_adder_4_bit.v"/>
+        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="ip/full_adder_4_bit_full_adder_1_bit_0_3/full_adder_4_bit_full_adder_1_bit_0_3.xci"/>
+        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="ip/full_adder_4_bit_full_adder_1_bit_0_1/full_adder_4_bit_full_adder_1_bit_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="ip/full_adder_4_bit_xlconstant_0_0/full_adder_4_bit_xlconstant_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="ip/full_adder_4_bit_full_adder_1_bit_0_2/full_adder_4_bit_full_adder_1_bit_0_2.xci"/>
+        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="ip/full_adder_4_bit_full_adder_1_bit_0_0/full_adder_4_bit_full_adder_1_bit_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="full_adder_4_bit_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="hdl/full_adder_4_bit.hwdef"/>
+        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="hw_handoff/full_adder_4_bit_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="hw_handoff/full_adder_4_bit.hwh"/>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/full_adder_4_bit_ver.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/full_adder_4_bit_tb.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="full_adder_1_bit_tb"/>
@@ -100,12 +135,13 @@
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="full_adder_1_bit_tb"/>
+        <Option Name="TopModule" Val="full_adder_4_bit_tb"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
-        <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
+        <Option Name="SimMode" Val="post-implementation"/>
         <Option Name="SrcSet" Val="sources_1"/>
+        <Option Name="xsim.simulate.runtime" Val="50000ns"/>
       </Config>
     </FileSet>
   </FileSets>
