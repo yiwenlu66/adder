@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x5797E7AC5797E7AC" bd:device="xc7a35tcpg236-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2016.3" bd:top="full_adder_1_bit" bd:version="1.00.a">
+
+  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>full_adder_1_bit</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:parameters>
+      <spirit:parameter>
+        <spirit:name>isTop</spirit:name>
+        <spirit:value spirit:format="bool" spirit:resolve="immediate">true</spirit:value>
+      </spirit:parameter>
+    </spirit:parameters>
+    <spirit:model>
+      <spirit:views>
+        <spirit:view>
+          <spirit:name>BlockDiagram</spirit:name>
+          <spirit:envIdentifier>:vivado.xilinx.com:</spirit:envIdentifier>
+          <spirit:hierarchyRef spirit:library="BlockDiagram" spirit:name="full_adder_1_bit_imp" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
+        </spirit:view>
+      </spirit:views>
+      <spirit:ports>
+        <spirit:port>
+          <spirit:name>A</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>B</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>CI</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>S</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>CO</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+      </spirit:ports>
+    </spirit:model>
+  </spirit:component>
+
+  <spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>full_adder_1_bit_imp</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:componentInstances>
+      <spirit:componentInstance>
+        <spirit:instanceName>xup_xor2_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="xup_xor2" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">full_adder_1_bit_xup_xor2_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xup_xor2_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="xup_xor2" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">full_adder_1_bit_xup_xor2_1_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xup_nand2_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="xup_nand2" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">full_adder_1_bit_xup_nand2_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xup_nand2_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="xup_nand2" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">full_adder_1_bit_xup_nand2_1_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xup_nand2_2</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="xup_nand2" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">full_adder_1_bit_xup_nand2_2_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+    </spirit:componentInstances>
+    <spirit:adHocConnections>
+      <spirit:adHocConnection>
+        <spirit:name>A_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="A"/>
+        <spirit:internalPortReference spirit:componentRef="xup_xor2_0" spirit:portRef="a"/>
+        <spirit:internalPortReference spirit:componentRef="xup_nand2_2" spirit:portRef="a"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>B_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="B"/>
+        <spirit:internalPortReference spirit:componentRef="xup_xor2_0" spirit:portRef="b"/>
+        <spirit:internalPortReference spirit:componentRef="xup_nand2_2" spirit:portRef="b"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xup_nand2_2_y</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xup_nand2_2" spirit:portRef="y"/>
+        <spirit:internalPortReference spirit:componentRef="xup_nand2_1" spirit:portRef="b"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>CI_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="CI"/>
+        <spirit:internalPortReference spirit:componentRef="xup_xor2_1" spirit:portRef="b"/>
+        <spirit:internalPortReference spirit:componentRef="xup_nand2_0" spirit:portRef="b"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xup_xor2_0_y</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xup_xor2_0" spirit:portRef="y"/>
+        <spirit:internalPortReference spirit:componentRef="xup_xor2_1" spirit:portRef="a"/>
+        <spirit:internalPortReference spirit:componentRef="xup_nand2_0" spirit:portRef="a"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xup_nand2_0_y</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xup_nand2_0" spirit:portRef="y"/>
+        <spirit:internalPortReference spirit:componentRef="xup_nand2_1" spirit:portRef="a"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xup_nand2_1_y</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xup_nand2_1" spirit:portRef="y"/>
+        <spirit:externalPortReference spirit:portRef="CO"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xup_xor2_1_y</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xup_xor2_1" spirit:portRef="y"/>
+        <spirit:externalPortReference spirit:portRef="S"/>
+      </spirit:adHocConnection>
+    </spirit:adHocConnections>
+  </spirit:design>
+
+</bd:repository>
