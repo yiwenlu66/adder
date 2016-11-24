@@ -1,43 +1,14 @@
 Vivado Simulator 2016.3
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto 5b856135895048fbadeafbacf47dbe5a --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot calculator_tb_behav xil_defaultlib.calculator_tb xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto 5b856135895048fbadeafbacf47dbe5a --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot peripheral_test_tb_behav xil_defaultlib.peripheral_test_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.xup_inv
-Compiling module xil_defaultlib.full_adder_1_bit_xup_inv_0_0
-Compiling module xil_defaultlib.xup_nand2
-Compiling module xil_defaultlib.full_adder_1_bit_xup_nand2_0_0
-Compiling module xil_defaultlib.full_adder_1_bit_xup_nand2_1_0
-Compiling module xil_defaultlib.full_adder_1_bit_xup_nand2_2_0
-Compiling module xil_defaultlib.xup_xnor2
-Compiling module xil_defaultlib.full_adder_1_bit_xup_xnor2_0_0
-Compiling module xil_defaultlib.xup_xor2
-Compiling module xil_defaultlib.full_adder_1_bit_xup_xor2_0_0
-Compiling module xil_defaultlib.full_adder_1_bit
-Compiling module xil_defaultlib.full_adder_4_bit_full_adder_1_bi...
-Compiling module xil_defaultlib.full_adder_4_bit_full_adder_1_bi...
-Compiling module xil_defaultlib.full_adder_4_bit_full_adder_1_bi...
-Compiling module xil_defaultlib.full_adder_4_bit_full_adder_1_bi...
-Compiling module xil_defaultlib.full_adder_4_bit
-Compiling module xil_defaultlib.complement_full_adder_4_bit_0_0
-Compiling module xil_defaultlib.xlconstant(CONST_VAL=1'b0)
-Compiling module xil_defaultlib.complement_xlconstant_1_0
-Compiling module xil_defaultlib.complement_xup_xor2_0_0
-Compiling module xil_defaultlib.complement_xup_xor2_1_0
-Compiling module xil_defaultlib.complement_xup_xor2_2_0
-Compiling module xil_defaultlib.complement_xup_xor2_3_0
-Compiling module xil_defaultlib.complement
-Compiling module xil_defaultlib.calculator_complement_0_0
-Compiling module xil_defaultlib.calculator_complement_1_0
-Compiling module xil_defaultlib.calculator_complement_2_0
-Compiling module xil_defaultlib.calculator_full_adder_4_bit_0_0
-Compiling module xil_defaultlib.calculator_xlconstant_0_0
-Compiling module xil_defaultlib.calculator
-Compiling module xil_defaultlib.calculator_ver
-Compiling module xil_defaultlib.calculator_tb
+Compiling module xil_defaultlib.seven_seg
+Compiling module xil_defaultlib.peripheral_test_ver
+Compiling module xil_defaultlib.peripheral_test_tb
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot calculator_tb_behav
+Built simulation snapshot peripheral_test_tb_behav

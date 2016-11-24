@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.sim/sim_1/synth/timing/peripheral_test_ver_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module peripheral_test
+INFO: [VRFC 10-311] analyzing module peripheral_test_BCD2SEG7_0_0
+INFO: [VRFC 10-311] analyzing module peripheral_test_BCD2SEG7_0_0BCD2SEG7
+INFO: [VRFC 10-311] analyzing module peripheral_test_ver
+INFO: [VRFC 10-311] analyzing module peripheral_test_xlconstant_0_0
+INFO: [VRFC 10-311] analyzing module peripheral_test_xlconstant_1_0
+INFO: [VRFC 10-311] analyzing module glbl

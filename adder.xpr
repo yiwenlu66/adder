@@ -34,20 +34,20 @@
     <Option Name="IPStaticSourceDir" Val="$PPRDIR/adder.ip_user_files/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSANumComputeUnits" Val="16"/>
-    <Option Name="WTXSimLaunchSim" Val="34"/>
+    <Option Name="WTXSimLaunchSim" Val="65"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="7"/>
-    <Option Name="WTModelSimExportSim" Val="7"/>
-    <Option Name="WTQuestaExportSim" Val="7"/>
-    <Option Name="WTIesExportSim" Val="7"/>
-    <Option Name="WTVcsExportSim" Val="7"/>
-    <Option Name="WTRivieraExportSim" Val="7"/>
-    <Option Name="WTActivehdlExportSim" Val="7"/>
+    <Option Name="WTXSimExportSim" Val="8"/>
+    <Option Name="WTModelSimExportSim" Val="8"/>
+    <Option Name="WTQuestaExportSim" Val="8"/>
+    <Option Name="WTIesExportSim" Val="8"/>
+    <Option Name="WTVcsExportSim" Val="8"/>
+    <Option Name="WTRivieraExportSim" Val="8"/>
+    <Option Name="WTActivehdlExportSim" Val="8"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -57,8 +57,56 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/new/seven_seg.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/peripheral_test_ver.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/peripheral_test/peripheral_test.bd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+        <CompFileExtendedInfo CompFileName="peripheral_test.bd" FileRelPathName="ip/peripheral_test_BCD2SEG7_0_0/peripheral_test_BCD2SEG7_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="peripheral_test.bd" FileRelPathName="hdl/peripheral_test.v"/>
+        <CompFileExtendedInfo CompFileName="peripheral_test.bd" FileRelPathName="ip/peripheral_test_xlconstant_0_0/peripheral_test_xlconstant_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="peripheral_test.bd" FileRelPathName="ip/peripheral_test_xlconstant_1_0/peripheral_test_xlconstant_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="peripheral_test.bd" FileRelPathName="peripheral_test_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="peripheral_test.bd" FileRelPathName="hdl/peripheral_test.hwdef"/>
+        <CompFileExtendedInfo CompFileName="peripheral_test.bd" FileRelPathName="hw_handoff/peripheral_test_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="peripheral_test.bd" FileRelPathName="hw_handoff/peripheral_test.hwh"/>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/full_adder_4_bit/full_adder_4_bit.bd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="hdl/full_adder_4_bit.v"/>
+        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="ip/full_adder_4_bit_full_adder_1_bit_0_3/full_adder_4_bit_full_adder_1_bit_0_3.xci"/>
+        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="hdl/full_adder_4_bit.hwdef"/>
+        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="hw_handoff/full_adder_4_bit.hwh"/>
+        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="full_adder_4_bit_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="ip/full_adder_4_bit_full_adder_1_bit_0_2/full_adder_4_bit_full_adder_1_bit_0_2.xci"/>
+        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="hw_handoff/full_adder_4_bit_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="ip/full_adder_4_bit_full_adder_1_bit_0_1/full_adder_4_bit_full_adder_1_bit_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="ip/full_adder_4_bit_full_adder_1_bit_0_0/full_adder_4_bit_full_adder_1_bit_0_0.xci"/>
+      </File>
       <File Path="$PSRCDIR/sources_1/bd/full_adder_1_bit/full_adder_1_bit.bd">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -87,53 +135,6 @@
           <Proxy FileSetName="full_adder_1_bit_xup_nand2_2_0"/>
         </CompFileExtendedInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/full_adder_1_bit_ver.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/full_adder_1_bit_tb.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/bd/full_adder_4_bit/full_adder_4_bit.bd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="hdl/full_adder_4_bit.v"/>
-        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="ip/full_adder_4_bit_full_adder_1_bit_0_3/full_adder_4_bit_full_adder_1_bit_0_3.xci"/>
-        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="hdl/full_adder_4_bit.hwdef"/>
-        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="hw_handoff/full_adder_4_bit.hwh"/>
-        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="full_adder_4_bit_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="ip/full_adder_4_bit_full_adder_1_bit_0_2/full_adder_4_bit_full_adder_1_bit_0_2.xci"/>
-        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="hw_handoff/full_adder_4_bit_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="ip/full_adder_4_bit_full_adder_1_bit_0_1/full_adder_4_bit_full_adder_1_bit_0_1.xci"/>
-        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="ip/full_adder_4_bit_full_adder_1_bit_0_0/full_adder_4_bit_full_adder_1_bit_0_0.xci"/>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/full_adder_4_bit_ver.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/full_adder_4_bit_tb.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/bd/complement/complement.bd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -157,22 +158,6 @@
         <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="hw_handoff/complement_bd.tcl"/>
         <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="hw_handoff/complement.hwh"/>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/complement_ver.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/complement_tb.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/bd/calculator/calculator.bd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -191,7 +176,63 @@
         <CompFileExtendedInfo CompFileName="calculator.bd" FileRelPathName="hw_handoff/calculator_bd.tcl"/>
         <CompFileExtendedInfo CompFileName="calculator.bd" FileRelPathName="hw_handoff/calculator.hwh"/>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/full_adder_4_bit_ver.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/full_adder_1_bit_ver.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/complement_ver.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/new/calculator_ver.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/peripheral_test_tb.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/full_adder_4_bit_tb.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/full_adder_1_bit_tb.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/complement_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -209,13 +250,19 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="full_adder_1_bit_tb"/>
-        <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="TopModule" Val="peripheral_test_ver"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
+      <File Path="$PSRCDIR/constrs_1/new/ports.xdc">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
       <Config>
+        <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/ports.xdc"/>
         <Option Name="ConstrsType" Val="XDC"/>
       </Config>
     </FileSet>
@@ -223,12 +270,14 @@
       <Filter Type="Srcs"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="calculator_tb"/>
+        <Option Name="TopModule" Val="peripheral_test_tb"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
+        <Option Name="SimMode" Val="post-implementation"/>
         <Option Name="SrcSet" Val="sources_1"/>
         <Option Name="xsim.simulate.runtime" Val="50000ns"/>
+        <Option Name="NLNetlistMode" Val="funcsim"/>
       </Config>
     </FileSet>
     <FileSet Name="full_adder_1_bit_xup_xor2_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/full_adder_1_bit_xup_xor2_0_0">
@@ -279,6 +328,18 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
+    <FileSet Name="constrs_2" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_2">
+      <File Path="$PSRCDIR/constrs_2/new/ports.xdc">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_2/new/ports.xdc"/>
+        <Option Name="ConstrsType" Val="XDC"/>
+      </Config>
+    </FileSet>
   </FileSets>
   <Simulators>
     <Simulator Name="XSim">
@@ -299,11 +360,12 @@
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="10">
-    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" State="current" IncludeInArchive="true">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a35tcpg236-1" ConstrsSet="constrs_2" Description="Vivado Synthesis Defaults" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="full_adder_1_bit_xup_xor2_0_0_synth_1" Type="Ft3:Synth" SrcSet="full_adder_1_bit_xup_xor2_0_0" Part="xc7a35tcpg236-1" ConstrsSet="full_adder_1_bit_xup_xor2_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/full_adder_1_bit_xup_xor2_0_0_synth_1" IncludeInArchive="true">
@@ -370,7 +432,7 @@
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." State="current" SynthRun="synth_1" IncludeInArchive="true">
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="constrs_2" Description="Default settings for Implementation." State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
@@ -383,6 +445,7 @@
         <Step Id="post_route_phys_opt_design"/>
         <Step Id="write_bitstream"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="full_adder_1_bit_xup_xor2_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="full_adder_1_bit_xup_xor2_0_0" Description="Default settings for Implementation." SynthRun="full_adder_1_bit_xup_xor2_0_0_synth_1" IncludeInArchive="false">

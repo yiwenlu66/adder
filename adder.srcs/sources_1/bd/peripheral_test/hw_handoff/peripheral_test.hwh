@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Nov 24 15:33:32 2016" VIVADOVERSION="2016.3">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="peripheral_test" PACKAGE="cpg236" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="A2" SIGIS="undef" SIGNAME="External_Ports_A2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BCD2SEG7_0" PORT="BCD_C"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="A1" SIGIS="undef" SIGNAME="External_Ports_A1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BCD2SEG7_0" PORT="BCD_B"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="A0" SIGIS="undef" SIGNAME="External_Ports_A0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BCD2SEG7_0" PORT="BCD_A"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="a" SIGIS="undef" SIGNAME="BCD2SEG7_0_a">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BCD2SEG7_0" PORT="a"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="b" SIGIS="undef" SIGNAME="BCD2SEG7_0_b">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BCD2SEG7_0" PORT="b"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="c" SIGIS="undef" SIGNAME="BCD2SEG7_0_c">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BCD2SEG7_0" PORT="c"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="d" SIGIS="undef" SIGNAME="BCD2SEG7_0_d">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BCD2SEG7_0" PORT="d"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="e" SIGIS="undef" SIGNAME="BCD2SEG7_0_e">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BCD2SEG7_0" PORT="e"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="f" SIGIS="undef" SIGNAME="BCD2SEG7_0_f">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BCD2SEG7_0" PORT="f"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="g" SIGIS="undef" SIGNAME="BCD2SEG7_0_g">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BCD2SEG7_0" PORT="g"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="AN0" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_1_dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xlconstant_1" PORT="dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="AN1" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="AN2" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="AN3" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="0" NAME="DP" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/BCD2SEG7_0" HWVERSION="1.0" INSTANCE="BCD2SEG7_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BCD2SEG7" VLNV="xilinx.com:XUP:BCD2SEG7:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DELAY" VALUE="10"/>
+        <PARAMETER NAME="Component_Name" VALUE="peripheral_test_BCD2SEG7_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="LT_n" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RBI_n" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BCD_D" SIGIS="undef" SIGNAME="xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_1" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BCD_C" SIGIS="undef" SIGNAME="External_Ports_A2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="A2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BCD_B" SIGIS="undef" SIGNAME="External_Ports_A1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="A1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BCD_A" SIGIS="undef" SIGNAME="External_Ports_A0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="A0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="a" SIGIS="undef" SIGNAME="BCD2SEG7_0_a">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="b" SIGIS="undef" SIGNAME="BCD2SEG7_0_b">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="c" SIGIS="undef" SIGNAME="BCD2SEG7_0_c">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="c"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="d" SIGIS="undef" SIGNAME="BCD2SEG7_0_d">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="d"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="e" SIGIS="undef" SIGNAME="BCD2SEG7_0_e">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="e"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="f" SIGIS="undef" SIGNAME="BCD2SEG7_0_f">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="f"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="g" SIGIS="undef" SIGNAME="BCD2SEG7_0_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="g"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" NAME="BI_RBO_n" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/xlconstant_0" HWVERSION="1.1" INSTANCE="xlconstant_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="1"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="peripheral_test_xlconstant_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BCD2SEG7_0" PORT="LT_n"/>
+            <CONNECTION INSTANCE="BCD2SEG7_0" PORT="RBI_n"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="DP"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="AN1"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="AN2"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="AN3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/xlconstant_1" HWVERSION="1.1" INSTANCE="xlconstant_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="0"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="peripheral_test_xlconstant_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BCD2SEG7_0" PORT="BCD_D"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="AN0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

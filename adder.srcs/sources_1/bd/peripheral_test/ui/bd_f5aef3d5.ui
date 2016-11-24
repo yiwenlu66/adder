@@ -1,0 +1,36 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port DP -pg 1 -y 50 -defaultsOSRD
+preplace port a -pg 1 -y 90 -defaultsOSRD
+preplace port AN0 -pg 1 -y 10 -defaultsOSRD
+preplace port b -pg 1 -y 110 -defaultsOSRD
+preplace port AN1 -pg 1 -y 30 -defaultsOSRD
+preplace port c -pg 1 -y 130 -defaultsOSRD
+preplace port AN2 -pg 1 -y 20 -defaultsOSRD
+preplace port d -pg 1 -y 150 -defaultsOSRD
+preplace port A0 -pg 1 -y 210 -defaultsOSRD
+preplace port AN3 -pg 1 -y 40 -defaultsOSRD
+preplace port e -pg 1 -y 170 -defaultsOSRD
+preplace port A1 -pg 1 -y 190 -defaultsOSRD
+preplace port f -pg 1 -y 190 -defaultsOSRD
+preplace port A2 -pg 1 -y 170 -defaultsOSRD
+preplace port g -pg 1 -y 210 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -y 40 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 1 -y 120 -defaultsOSRD
+preplace inst BCD2SEG7_0 -pg 1 -lvl 2 -y 160 -defaultsOSRD
+preplace netloc xlconstant_1_dout 1 1 2 150 10 NJ
+preplace netloc BCD2SEG7_0_a 1 2 1 NJ
+preplace netloc BCD2SEG7_0_b 1 2 1 NJ
+preplace netloc BCD2SEG7_0_c 1 2 1 NJ
+preplace netloc BCD2SEG7_0_d 1 2 1 NJ
+preplace netloc A2_1 1 0 2 NJ 170 NJ
+preplace netloc xlconstant_0_dout 1 1 2 140 40 390J
+preplace netloc BCD2SEG7_0_e 1 2 1 NJ
+preplace netloc BCD2SEG7_0_f 1 2 1 NJ
+preplace netloc A1_1 1 0 2 NJ 190 NJ
+preplace netloc BCD2SEG7_0_g 1 2 1 NJ
+preplace netloc A0_1 1 0 2 NJ 210 NJ
+levelinfo -pg 1 0 80 270 410 -top 0 -bot 330
+",
+}

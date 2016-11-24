@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1479978914">
+  <File Type="PWROPT-DRC" Name="peripheral_test_ver_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="peripheral_test_ver_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="peripheral_test_ver_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="peripheral_test_ver_power_routed.rpx"/>
+  <File Type="PA-TCL" Name="peripheral_test_ver.tcl"/>
+  <File Type="OPT-HWDEF" Name="peripheral_test_ver.hwdef"/>
+  <File Type="RDI-RDI" Name="peripheral_test_ver.vdi"/>
+  <File Type="OPT-DCP" Name="peripheral_test_ver_opt.dcp"/>
+  <File Type="OPT-DRC" Name="peripheral_test_ver_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="peripheral_test_ver_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="peripheral_test_ver_pwropt.dcp"/>
+  <File Type="PWROPT-TIMING" Name="peripheral_test_ver_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="peripheral_test_ver_placed.dcp"/>
+  <File Type="PLACE-IO" Name="peripheral_test_ver_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="peripheral_test_ver_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="peripheral_test_ver_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="peripheral_test_ver_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="peripheral_test_ver_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="peripheral_test_ver_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="peripheral_test_ver_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="peripheral_test_ver_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="peripheral_test_ver_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="peripheral_test_ver_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="peripheral_test_ver_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="peripheral_test_ver_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="peripheral_test_ver_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="peripheral_test_ver_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="peripheral_test_ver_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="peripheral_test_ver_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="peripheral_test_ver_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="peripheral_test_ver_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="peripheral_test_ver.bin"/>
+  <File Type="ROUTE-DRC-RPX" Name="peripheral_test_ver_drc_routed.rpx"/>
+  <File Type="BG-DRC" Name="peripheral_test_ver.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="peripheral_test_ver_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="peripheral_test_ver.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="peripheral_test_ver_methodology_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="peripheral_test_ver.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="peripheral_test_ver_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="peripheral_test_ver_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="peripheral_test_ver_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="peripheral_test_ver_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="peripheral_test_ver_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="peripheral_test_ver_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="peripheral_test_ver_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="peripheral_test_ver_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="peripheral_test_ver_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="peripheral_test_ver_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="peripheral_test_ver_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="peripheral_test_ver_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="peripheral_test_ver_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="peripheral_test_ver_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="peripheral_test_ver_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="peripheral_test_ver.bit"/>
+  <File Type="BITSTR-RBT" Name="peripheral_test_ver.rbt"/>
+  <File Type="BITSTR-NKY" Name="peripheral_test_ver.nky"/>
+  <File Type="BITSTR-BMM" Name="peripheral_test_ver_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="peripheral_test_ver.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="peripheral_test_ver.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/seven_seg.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/peripheral_test_ver.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/peripheral_test/peripheral_test.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/full_adder_4_bit/full_adder_4_bit.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/full_adder_1_bit/full_adder_1_bit.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/complement/complement.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/calculator/calculator.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/full_adder_4_bit_ver.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/full_adder_1_bit_ver.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/complement_ver.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/calculator_ver.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/peripheral_test_tb.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/full_adder_4_bit_tb.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/full_adder_1_bit_tb.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/complement_tb.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/calculator_tb.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="peripheral_test_ver"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_2">
+    <File Path="$PSRCDIR/constrs_2/new/ports.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_2/new/ports.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_xnor2_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_inv_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_nand2_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_xor2_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_nand2_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_nand2_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="complement_xlconstant_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="complement_full_adder_4_bit_0_0"/>
+</GenRun>
