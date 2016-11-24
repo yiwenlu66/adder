@@ -1,7 +1,7 @@
 @echo off
 set xv_path=C:\\Xilinx\\Vivado\\2016.3\\bin
-echo "xvlog -m64 --relax -prj peripheral_test_ver_vlog.prj"
-call %xv_path%/xvlog  -m64 --relax -prj peripheral_test_ver_vlog.prj -log xvlog.log
+echo "xvlog -m64 --relax -prj top_tb_vlog.prj"
+call %xv_path%/xvlog  -m64 --relax -prj top_tb_vlog.prj -log xvlog.log
 call type xvlog.log > compile.log
 if "%errorlevel%"=="1" goto END
 if "%errorlevel%"=="0" goto SUCCESS

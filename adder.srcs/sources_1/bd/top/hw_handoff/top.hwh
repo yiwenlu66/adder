@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Nov 24 19:40:07 2016" VIVADOVERSION="2016.3">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Nov 24 20:53:06 2016" VIVADOVERSION="2016.3">
 
   <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="top" PACKAGE="cpg236" SPEEDGRADE="-1"/>
 
@@ -31,17 +31,13 @@
     <PORT DIR="I" NAME="SGN_M" SIGIS="undef" SIGNAME="External_Ports_SGN_M">
       <CONNECTIONS>
         <CONNECTION INSTANCE="calculator" PORT="SGN_M"/>
+        <CONNECTION INSTANCE="External_Ports" PORT="SGN_M_O"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="SGN_N" SIGIS="undef" SIGNAME="External_Ports_SGN_N">
       <CONNECTIONS>
         <CONNECTION INSTANCE="calculator" PORT="SGN_N"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="CLK" SIGIS="undef" SIGNAME="External_Ports_CLK">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="counter" PORT="CLK"/>
-        <CONNECTION INSTANCE="clock_divider" PORT="clkin"/>
+        <CONNECTION INSTANCE="External_Ports" PORT="SGN_N_O"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" LEFT="3" NAME="Y" RIGHT="0" SIGIS="undef" SIGNAME="MUX_y">
@@ -49,24 +45,39 @@
         <CONNECTION INSTANCE="MUX" PORT="y"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="AN0" SIGIS="undef" SIGNAME="two_four_decoder_0_Y3">
+    <PORT DIR="O" NAME="AN3" SIGIS="undef" SIGNAME="xup_inv_0_y">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="two_four_decoder_0" PORT="Y3"/>
+        <CONNECTION INSTANCE="xup_inv_0" PORT="y"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="AN1" SIGIS="undef" SIGNAME="two_four_decoder_0_Y2">
+    <PORT DIR="O" NAME="AN2" SIGIS="undef" SIGNAME="xup_inv_1_y">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="two_four_decoder_0" PORT="Y2"/>
+        <CONNECTION INSTANCE="xup_inv_1" PORT="y"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="AN2" SIGIS="undef" SIGNAME="two_four_decoder_0_Y1">
+    <PORT DIR="O" NAME="AN1" SIGIS="undef" SIGNAME="xup_inv_2_y">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="two_four_decoder_0" PORT="Y1"/>
+        <CONNECTION INSTANCE="xup_inv_2" PORT="y"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="AN3" SIGIS="undef" SIGNAME="two_four_decoder_0_Y0">
+    <PORT DIR="O" NAME="AN0" SIGIS="undef" SIGNAME="xup_inv_3_y">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="two_four_decoder_0" PORT="Y0"/>
+        <CONNECTION INSTANCE="xup_inv_3" PORT="y"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="CLK" SIGIS="undef" SIGNAME="External_Ports_CLK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clock_divider" PORT="clkin"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SGN_M_O" SIGIS="undef" SIGNAME="External_Ports_SGN_M">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="External_Ports" PORT="SGN_M"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SGN_N_O" SIGIS="undef" SIGNAME="External_Ports_SGN_N">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="External_Ports" PORT="SGN_N"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -229,7 +240,11 @@
             <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="clkout" SIGIS="undef"/>
+        <PORT DIR="O" NAME="clkout" SIGIS="undef" SIGNAME="clock_divider_clkout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="counter" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
@@ -562,9 +577,9 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="10000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+        <PORT CLKFREQUENCY="10000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="clock_divider_clkout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+            <CONNECTION INSTANCE="clock_divider" PORT="clkout"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="1" NAME="Q" RIGHT="0" SIGIS="data" SIGNAME="counter_Q">
@@ -590,20 +605,104 @@
         </PORT>
         <PORT DIR="O" NAME="Y0" SIGIS="undef" SIGNAME="two_four_decoder_0_Y0">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="AN3"/>
+            <CONNECTION INSTANCE="xup_inv_0" PORT="a"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="Y1" SIGIS="undef" SIGNAME="two_four_decoder_0_Y1">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="AN2"/>
+            <CONNECTION INSTANCE="xup_inv_1" PORT="a"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="Y2" SIGIS="undef" SIGNAME="two_four_decoder_0_Y2">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="AN1"/>
+            <CONNECTION INSTANCE="xup_inv_2" PORT="a"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="Y3" SIGIS="undef" SIGNAME="two_four_decoder_0_Y3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xup_inv_3" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/xup_inv_0" HWVERSION="1.0" INSTANCE="xup_inv_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xup_inv" VLNV="xilinx.com:xup:xup_inv:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DELAY" VALUE="3"/>
+        <PARAMETER NAME="Component_Name" VALUE="top_xup_inv_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="two_four_decoder_0_Y0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="two_four_decoder_0" PORT="Y0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y" SIGIS="undef" SIGNAME="xup_inv_0_y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="AN3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/xup_inv_1" HWVERSION="1.0" INSTANCE="xup_inv_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xup_inv" VLNV="xilinx.com:xup:xup_inv:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DELAY" VALUE="3"/>
+        <PARAMETER NAME="Component_Name" VALUE="top_xup_inv_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="two_four_decoder_0_Y1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="two_four_decoder_0" PORT="Y1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y" SIGIS="undef" SIGNAME="xup_inv_1_y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="AN2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/xup_inv_2" HWVERSION="1.0" INSTANCE="xup_inv_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xup_inv" VLNV="xilinx.com:xup:xup_inv:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DELAY" VALUE="3"/>
+        <PARAMETER NAME="Component_Name" VALUE="top_xup_inv_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="two_four_decoder_0_Y2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="two_four_decoder_0" PORT="Y2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y" SIGIS="undef" SIGNAME="xup_inv_2_y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="AN1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/xup_inv_3" HWVERSION="1.0" INSTANCE="xup_inv_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xup_inv" VLNV="xilinx.com:xup:xup_inv:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DELAY" VALUE="3"/>
+        <PARAMETER NAME="Component_Name" VALUE="top_xup_inv_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="two_four_decoder_0_Y3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="two_four_decoder_0" PORT="Y3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y" SIGIS="undef" SIGNAME="xup_inv_3_y">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="AN0"/>
           </CONNECTIONS>

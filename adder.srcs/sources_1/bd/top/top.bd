@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0xB49F9EC88548A0EC" bd:device="xc7a35tcpg236-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2016.3" bd:top="top" bd:version="1.00.a">
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0xA1F2E46693CB7F9D" bd:device="xc7a35tcpg236-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2016.3" bd:top="top" bd:version="1.00.a">
 
   <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
     <spirit:vendor>xilinx.com</spirit:vendor>
@@ -58,12 +58,6 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>CLK</spirit:name>
-          <spirit:wire>
-            <spirit:direction>in</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
           <spirit:name>Y</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
@@ -74,13 +68,7 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>AN0</spirit:name>
-          <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>AN1</spirit:name>
+          <spirit:name>AN3</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
           </spirit:wire>
@@ -92,7 +80,31 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>AN3</spirit:name>
+          <spirit:name>AN1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>AN0</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>CLK</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>SGN_M_O</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>SGN_N_O</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
           </spirit:wire>
@@ -191,6 +203,34 @@
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">top_two_four_decoder_0_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xup_inv_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="xup_inv" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">top_xup_inv_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xup_inv_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="xup_inv" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">top_xup_inv_1_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xup_inv_2</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="xup_inv" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">top_xup_inv_2_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xup_inv_3</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="xup_inv" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">top_xup_inv_3_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
     </spirit:componentInstances>
     <spirit:adHocConnections>
       <spirit:adHocConnection>
@@ -221,11 +261,13 @@
         <spirit:name>SGN_M_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="SGN_M"/>
         <spirit:internalPortReference spirit:componentRef="calculator" spirit:portRef="SGN_M"/>
+        <spirit:externalPortReference spirit:portRef="SGN_M_O"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>SGN_N_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="SGN_N"/>
         <spirit:internalPortReference spirit:componentRef="calculator" spirit:portRef="SGN_N"/>
+        <spirit:externalPortReference spirit:portRef="SGN_N_O"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>calculator_0_S0</spirit:name>
@@ -297,28 +339,52 @@
       <spirit:adHocConnection>
         <spirit:name>two_four_decoder_0_Y0</spirit:name>
         <spirit:internalPortReference spirit:componentRef="two_four_decoder_0" spirit:portRef="Y0"/>
+        <spirit:internalPortReference spirit:componentRef="xup_inv_0" spirit:portRef="a"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xup_inv_0_y</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xup_inv_0" spirit:portRef="y"/>
         <spirit:externalPortReference spirit:portRef="AN3"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>two_four_decoder_0_Y1</spirit:name>
         <spirit:internalPortReference spirit:componentRef="two_four_decoder_0" spirit:portRef="Y1"/>
+        <spirit:internalPortReference spirit:componentRef="xup_inv_1" spirit:portRef="a"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xup_inv_1_y</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xup_inv_1" spirit:portRef="y"/>
         <spirit:externalPortReference spirit:portRef="AN2"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>two_four_decoder_0_Y2</spirit:name>
         <spirit:internalPortReference spirit:componentRef="two_four_decoder_0" spirit:portRef="Y2"/>
+        <spirit:internalPortReference spirit:componentRef="xup_inv_2" spirit:portRef="a"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xup_inv_2_y</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xup_inv_2" spirit:portRef="y"/>
         <spirit:externalPortReference spirit:portRef="AN1"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>two_four_decoder_0_Y3</spirit:name>
         <spirit:internalPortReference spirit:componentRef="two_four_decoder_0" spirit:portRef="Y3"/>
+        <spirit:internalPortReference spirit:componentRef="xup_inv_3" spirit:portRef="a"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xup_inv_3_y</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xup_inv_3" spirit:portRef="y"/>
         <spirit:externalPortReference spirit:portRef="AN0"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>CLK_1</spirit:name>
         <spirit:externalPortReference spirit:portRef="CLK"/>
-        <spirit:internalPortReference spirit:componentRef="counter" spirit:portRef="CLK"/>
         <spirit:internalPortReference spirit:componentRef="clock_divider" spirit:portRef="clkin"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>clock_divider_clkout</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="clock_divider" spirit:portRef="clkout"/>
+        <spirit:internalPortReference spirit:componentRef="counter" spirit:portRef="CLK"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
   </spirit:design>

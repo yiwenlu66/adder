@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1479978911">
-  <File Type="PA-TCL" Name="peripheral_test_ver.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="peripheral_test_ver_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="peripheral_test_ver.vds"/>
-  <File Type="RDS-UTIL" Name="peripheral_test_ver_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="peripheral_test_ver_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="peripheral_test_ver.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="peripheral_test_ver_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="peripheral_test_ver_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1479992285">
+  <File Type="RDS-PROPCONSTRS" Name="top_display_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="top_display.tcl"/>
+  <File Type="RDS-RDS" Name="top_display.vds"/>
+  <File Type="RDS-UTIL" Name="top_display_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_display_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="top_display.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_display_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="top_display_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/top/top.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/seven_seg.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -17,8 +24,31 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/top_ver.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/top_display.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/top_tb.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/peripheral_test_ver.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -136,9 +166,17 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/bd/two_four_decoder/two_four_decoder.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="peripheral_test_ver"/>
+      <Option Name="TopModule" Val="top_display"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_2">
@@ -157,12 +195,21 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_xor2_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_nand2_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_inv_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_xnor2_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="top_calculator_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_inv_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_nand2_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_xor2_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_nand2_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_nand2_2_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="complement_full_adder_4_bit_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="complement_xlconstant_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="complement_full_adder_4_bit_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="top_xup_4_to_1_mux_vector_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="top_xlconcat_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="top_xlconcat_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="top_xlconcat_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="top_xlconcat_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="top_c_counter_binary_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="top_xup_clk_divider_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="top_two_four_decoder_0_0"/>
 </GenRun>

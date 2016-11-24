@@ -35,20 +35,20 @@
     <Option Name="IPStaticSourceDir" Val="$PPRDIR/adder.ip_user_files/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSANumComputeUnits" Val="16"/>
-    <Option Name="WTXSimLaunchSim" Val="74"/>
+    <Option Name="WTXSimLaunchSim" Val="80"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="10"/>
-    <Option Name="WTModelSimExportSim" Val="10"/>
-    <Option Name="WTQuestaExportSim" Val="10"/>
-    <Option Name="WTIesExportSim" Val="10"/>
-    <Option Name="WTVcsExportSim" Val="10"/>
-    <Option Name="WTRivieraExportSim" Val="10"/>
-    <Option Name="WTActivehdlExportSim" Val="10"/>
+    <Option Name="WTXSimExportSim" Val="18"/>
+    <Option Name="WTModelSimExportSim" Val="18"/>
+    <Option Name="WTQuestaExportSim" Val="18"/>
+    <Option Name="WTIesExportSim" Val="18"/>
+    <Option Name="WTVcsExportSim" Val="18"/>
+    <Option Name="WTRivieraExportSim" Val="18"/>
+    <Option Name="WTActivehdlExportSim" Val="18"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -64,40 +64,51 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_calculator_0_0_1/top_calculator_0_0.xci">
-          <Proxy FileSetName="top_calculator_0_0"/>
+        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_two_four_decoder_0_0/top_two_four_decoder_0_0.xci">
+          <Proxy FileSetName="top_two_four_decoder_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_xlconcat_0_0/top_xlconcat_0_0.xci">
-          <Proxy FileSetName="top_xlconcat_0_0"/>
+        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_xlconcat_0_1/top_xlconcat_0_1.xci">
+          <Proxy FileSetName="top_xlconcat_0_1"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_xlconcat_1_0/top_xlconcat_1_0.xci">
-          <Proxy FileSetName="top_xlconcat_1_0"/>
+        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_xup_clk_divider_0_0_1/top_xup_clk_divider_0_0.xci">
+          <Proxy FileSetName="top_xup_clk_divider_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_xup_4_to_1_mux_vector_0_0_1/top_xup_4_to_1_mux_vector_0_0.xci">
-          <Proxy FileSetName="top_xup_4_to_1_mux_vector_0_0"/>
+        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_c_counter_binary_0_0/top_c_counter_binary_0_0.xci">
+          <Proxy FileSetName="top_c_counter_binary_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_xlconstant_1_1/top_xlconstant_1_1.xci"/>
         <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_xlconcat_2_0/top_xlconcat_2_0.xci">
           <Proxy FileSetName="top_xlconcat_2_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_xlconcat_0_1/top_xlconcat_0_1.xci">
-          <Proxy FileSetName="top_xlconcat_0_1"/>
+        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_xlconcat_1_0/top_xlconcat_1_0.xci">
+          <Proxy FileSetName="top_xlconcat_1_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_xlconstant_0_0/top_xlconstant_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_c_counter_binary_0_0/top_c_counter_binary_0_0.xci">
-          <Proxy FileSetName="top_c_counter_binary_0_0"/>
+        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_xlconcat_0_0/top_xlconcat_0_0.xci">
+          <Proxy FileSetName="top_xlconcat_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_xup_clk_divider_0_0_1/top_xup_clk_divider_0_0.xci">
-          <Proxy FileSetName="top_xup_clk_divider_0_0"/>
+        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_xup_4_to_1_mux_vector_0_0_1/top_xup_4_to_1_mux_vector_0_0.xci">
+          <Proxy FileSetName="top_xup_4_to_1_mux_vector_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_calculator_0_0_1/top_calculator_0_0.xci">
+          <Proxy FileSetName="top_calculator_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="hdl/top.v"/>
-        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="top_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_two_four_decoder_0_0/top_two_four_decoder_0_0.xci">
-          <Proxy FileSetName="top_two_four_decoder_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="hw_handoff/top.hwh"/>
+        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_xup_inv_0_0/top_xup_inv_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_xup_inv_1_0/top_xup_inv_1_0.xci"/>
         <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="hdl/top.hwdef"/>
         <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="hw_handoff/top_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="hw_handoff/top.hwh"/>
+        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_xup_inv_2_0/top_xup_inv_2_0.xci"/>
+        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="ip/top_xup_inv_3_0/top_xup_inv_3_0.xci"/>
+        <CompFileExtendedInfo CompFileName="top.bd" FileRelPathName="top_ooc.xdc"/>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/seven_seg.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/top_ver.v">
         <FileInfo>
@@ -106,14 +117,14 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/top_tb.v">
+      <File Path="$PSRCDIR/sources_1/new/top_display.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/seven_seg.v">
+      <File Path="$PSRCDIR/sources_1/new/top_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -136,11 +147,11 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="peripheral_test.bd" FileRelPathName="peripheral_test_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="peripheral_test.bd" FileRelPathName="hdl/peripheral_test.hwdef"/>
         <CompFileExtendedInfo CompFileName="peripheral_test.bd" FileRelPathName="hw_handoff/peripheral_test_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="peripheral_test.bd" FileRelPathName="hw_handoff/peripheral_test.hwh"/>
-        <CompFileExtendedInfo CompFileName="peripheral_test.bd" FileRelPathName="peripheral_test_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="peripheral_test.bd" FileRelPathName="hdl/peripheral_test.v"/>
+        <CompFileExtendedInfo CompFileName="peripheral_test.bd" FileRelPathName="hw_handoff/peripheral_test.hwh"/>
         <CompFileExtendedInfo CompFileName="peripheral_test.bd" FileRelPathName="ip/peripheral_test_xlconstant_1_0/peripheral_test_xlconstant_1_0.xci"/>
         <CompFileExtendedInfo CompFileName="peripheral_test.bd" FileRelPathName="ip/peripheral_test_xlconstant_0_0/peripheral_test_xlconstant_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="peripheral_test.bd" FileRelPathName="ip/peripheral_test_BCD2SEG7_0_0/peripheral_test_BCD2SEG7_0_0.xci"/>
@@ -153,14 +164,14 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
         <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="hdl/full_adder_4_bit.v"/>
-        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="ip/full_adder_4_bit_full_adder_1_bit_0_3/full_adder_4_bit_full_adder_1_bit_0_3.xci"/>
         <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="hdl/full_adder_4_bit.hwdef"/>
+        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="ip/full_adder_4_bit_full_adder_1_bit_0_3/full_adder_4_bit_full_adder_1_bit_0_3.xci"/>
+        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="ip/full_adder_4_bit_full_adder_1_bit_0_2/full_adder_4_bit_full_adder_1_bit_0_2.xci"/>
+        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="ip/full_adder_4_bit_full_adder_1_bit_0_1/full_adder_4_bit_full_adder_1_bit_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="hw_handoff/full_adder_4_bit_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="ip/full_adder_4_bit_full_adder_1_bit_0_0/full_adder_4_bit_full_adder_1_bit_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="hw_handoff/full_adder_4_bit.hwh"/>
         <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="full_adder_4_bit_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="ip/full_adder_4_bit_full_adder_1_bit_0_2/full_adder_4_bit_full_adder_1_bit_0_2.xci"/>
-        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="hw_handoff/full_adder_4_bit_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="ip/full_adder_4_bit_full_adder_1_bit_0_1/full_adder_4_bit_full_adder_1_bit_0_1.xci"/>
-        <CompFileExtendedInfo CompFileName="full_adder_4_bit.bd" FileRelPathName="ip/full_adder_4_bit_full_adder_1_bit_0_0/full_adder_4_bit_full_adder_1_bit_0_0.xci"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/full_adder_1_bit/full_adder_1_bit.bd">
         <FileInfo>
@@ -169,28 +180,28 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="full_adder_1_bit.bd" FileRelPathName="hw_handoff/full_adder_1_bit_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="full_adder_1_bit.bd" FileRelPathName="hw_handoff/full_adder_1_bit.hwh"/>
-        <CompFileExtendedInfo CompFileName="full_adder_1_bit.bd" FileRelPathName="full_adder_1_bit_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="full_adder_1_bit.bd" FileRelPathName="hdl/full_adder_1_bit.hwdef"/>
+        <CompFileExtendedInfo CompFileName="full_adder_1_bit.bd" FileRelPathName="hw_handoff/full_adder_1_bit.hwh"/>
+        <CompFileExtendedInfo CompFileName="full_adder_1_bit.bd" FileRelPathName="hdl/full_adder_1_bit.v"/>
+        <CompFileExtendedInfo CompFileName="full_adder_1_bit.bd" FileRelPathName="ip/full_adder_1_bit_xup_nand2_2_0/full_adder_1_bit_xup_nand2_2_0.xci">
+          <Proxy FileSetName="full_adder_1_bit_xup_nand2_2_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="full_adder_1_bit.bd" FileRelPathName="ip/full_adder_1_bit_xup_nand2_0_0/full_adder_1_bit_xup_nand2_0_0.xci">
+          <Proxy FileSetName="full_adder_1_bit_xup_nand2_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="full_adder_1_bit.bd" FileRelPathName="hw_handoff/full_adder_1_bit_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="full_adder_1_bit.bd" FileRelPathName="full_adder_1_bit_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="full_adder_1_bit.bd" FileRelPathName="ip/full_adder_1_bit_xup_xor2_0_0/full_adder_1_bit_xup_xor2_0_0.xci">
+          <Proxy FileSetName="full_adder_1_bit_xup_xor2_0_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="full_adder_1_bit.bd" FileRelPathName="ip/full_adder_1_bit_xup_xnor2_0_0/full_adder_1_bit_xup_xnor2_0_0.xci">
           <Proxy FileSetName="full_adder_1_bit_xup_xnor2_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="full_adder_1_bit.bd" FileRelPathName="ip/full_adder_1_bit_xup_inv_0_0/full_adder_1_bit_xup_inv_0_0.xci">
           <Proxy FileSetName="full_adder_1_bit_xup_inv_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="full_adder_1_bit.bd" FileRelPathName="hdl/full_adder_1_bit.v"/>
-        <CompFileExtendedInfo CompFileName="full_adder_1_bit.bd" FileRelPathName="ip/full_adder_1_bit_xup_nand2_2_0/full_adder_1_bit_xup_nand2_2_0.xci">
-          <Proxy FileSetName="full_adder_1_bit_xup_nand2_2_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="full_adder_1_bit.bd" FileRelPathName="ip/full_adder_1_bit_xup_nand2_1_0/full_adder_1_bit_xup_nand2_1_0.xci">
           <Proxy FileSetName="full_adder_1_bit_xup_nand2_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="full_adder_1_bit.bd" FileRelPathName="ip/full_adder_1_bit_xup_nand2_0_0/full_adder_1_bit_xup_nand2_0_0.xci">
-          <Proxy FileSetName="full_adder_1_bit_xup_nand2_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="full_adder_1_bit.bd" FileRelPathName="ip/full_adder_1_bit_xup_xor2_0_0/full_adder_1_bit_xup_xor2_0_0.xci">
-          <Proxy FileSetName="full_adder_1_bit_xup_xor2_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/complement/complement.bd">
@@ -200,21 +211,21 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="hdl/complement.hwdef"/>
+        <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="hw_handoff/complement_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="hw_handoff/complement.hwh"/>
+        <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="complement_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="ip/complement_xup_xor2_0_0/complement_xup_xor2_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="hdl/complement.v"/>
         <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="ip/complement_xlconstant_1_0/complement_xlconstant_1_0.xci">
           <Proxy FileSetName="complement_xlconstant_1_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="hw_handoff/complement.hwh"/>
-        <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="hdl/complement.hwdef"/>
-        <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="hw_handoff/complement_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="complement_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="ip/complement_xup_xor2_3_0/complement_xup_xor2_3_0.xci"/>
-        <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="hdl/complement.v"/>
+        <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="ip/complement_xup_xor2_2_0/complement_xup_xor2_2_0.xci"/>
+        <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="ip/complement_xup_xor2_1_0/complement_xup_xor2_1_0.xci"/>
         <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="ip/complement_full_adder_4_bit_0_0/complement_full_adder_4_bit_0_0.xci">
           <Proxy FileSetName="complement_full_adder_4_bit_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="ip/complement_xup_xor2_0_0/complement_xup_xor2_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="ip/complement_xup_xor2_2_0/complement_xup_xor2_2_0.xci"/>
-        <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="ip/complement_xup_xor2_1_0/complement_xup_xor2_1_0.xci"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/calculator/calculator.bd">
         <FileInfo>
@@ -223,16 +234,16 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="calculator.bd" FileRelPathName="ip/calculator_complement_1_0/calculator_complement_1_0.xci"/>
-        <CompFileExtendedInfo CompFileName="calculator.bd" FileRelPathName="ip/calculator_complement_0_0/calculator_complement_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="calculator.bd" FileRelPathName="ip/calculator_complement_2_0/calculator_complement_2_0.xci"/>
         <CompFileExtendedInfo CompFileName="calculator.bd" FileRelPathName="hdl/calculator.hwdef"/>
+        <CompFileExtendedInfo CompFileName="calculator.bd" FileRelPathName="calculator_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="calculator.bd" FileRelPathName="hw_handoff/calculator_bd.tcl"/>
         <CompFileExtendedInfo CompFileName="calculator.bd" FileRelPathName="hw_handoff/calculator.hwh"/>
-        <CompFileExtendedInfo CompFileName="calculator.bd" FileRelPathName="calculator_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="calculator.bd" FileRelPathName="hdl/calculator.v"/>
         <CompFileExtendedInfo CompFileName="calculator.bd" FileRelPathName="ip/calculator_xlconstant_0_0/calculator_xlconstant_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="calculator.bd" FileRelPathName="ip/calculator_full_adder_4_bit_0_0/calculator_full_adder_4_bit_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="calculator.bd" FileRelPathName="ip/calculator_complement_2_0/calculator_complement_2_0.xci"/>
+        <CompFileExtendedInfo CompFileName="calculator.bd" FileRelPathName="ip/calculator_complement_1_0/calculator_complement_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="calculator.bd" FileRelPathName="ip/calculator_complement_0_0/calculator_complement_0_0.xci"/>
       </File>
       <File Path="$PSRCDIR/sources_1/new/full_adder_4_bit_ver.v">
         <FileInfo>
@@ -316,20 +327,20 @@
         <CompFileExtendedInfo CompFileName="two_four_decoder.bd" FileRelPathName="hdl/two_four_decoder.hwdef"/>
         <CompFileExtendedInfo CompFileName="two_four_decoder.bd" FileRelPathName="hw_handoff/two_four_decoder_bd.tcl"/>
         <CompFileExtendedInfo CompFileName="two_four_decoder.bd" FileRelPathName="hw_handoff/two_four_decoder.hwh"/>
-        <CompFileExtendedInfo CompFileName="two_four_decoder.bd" FileRelPathName="ip/two_four_decoder_xlslice_1_0/two_four_decoder_xlslice_1_0.xci"/>
-        <CompFileExtendedInfo CompFileName="two_four_decoder.bd" FileRelPathName="ip/two_four_decoder_xlslice_0_0/two_four_decoder_xlslice_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="two_four_decoder.bd" FileRelPathName="ip/two_four_decoder_xup_inv_0_0/two_four_decoder_xup_inv_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="two_four_decoder.bd" FileRelPathName="ip/two_four_decoder_xup_inv_1_0/two_four_decoder_xup_inv_1_0.xci"/>
-        <CompFileExtendedInfo CompFileName="two_four_decoder.bd" FileRelPathName="ip/two_four_decoder_xup_and2_0_0/two_four_decoder_xup_and2_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="two_four_decoder.bd" FileRelPathName="ip/two_four_decoder_xup_and2_0_1/two_four_decoder_xup_and2_0_1.xci"/>
-        <CompFileExtendedInfo CompFileName="two_four_decoder.bd" FileRelPathName="ip/two_four_decoder_xup_and2_1_0/two_four_decoder_xup_and2_1_0.xci"/>
-        <CompFileExtendedInfo CompFileName="two_four_decoder.bd" FileRelPathName="ip/two_four_decoder_xup_and2_0_2/two_four_decoder_xup_and2_0_2.xci"/>
-        <CompFileExtendedInfo CompFileName="two_four_decoder.bd" FileRelPathName="two_four_decoder_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="two_four_decoder.bd" FileRelPathName="hdl/two_four_decoder.v"/>
+        <CompFileExtendedInfo CompFileName="two_four_decoder.bd" FileRelPathName="ip/two_four_decoder_xup_and2_0_2/two_four_decoder_xup_and2_0_2.xci"/>
+        <CompFileExtendedInfo CompFileName="two_four_decoder.bd" FileRelPathName="ip/two_four_decoder_xup_and2_1_0/two_four_decoder_xup_and2_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="two_four_decoder.bd" FileRelPathName="ip/two_four_decoder_xup_and2_0_1/two_four_decoder_xup_and2_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="two_four_decoder.bd" FileRelPathName="ip/two_four_decoder_xup_and2_0_0/two_four_decoder_xup_and2_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="two_four_decoder.bd" FileRelPathName="two_four_decoder_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="two_four_decoder.bd" FileRelPathName="ip/two_four_decoder_xup_inv_0_0/two_four_decoder_xup_inv_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="two_four_decoder.bd" FileRelPathName="ip/two_four_decoder_xlslice_1_0/two_four_decoder_xlslice_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="two_four_decoder.bd" FileRelPathName="ip/two_four_decoder_xup_inv_1_0/two_four_decoder_xup_inv_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="two_four_decoder.bd" FileRelPathName="ip/two_four_decoder_xlslice_0_0/two_four_decoder_xlslice_0_0.xci"/>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="top_tb"/>
+        <Option Name="TopModule" Val="top_display"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -353,6 +364,7 @@
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
+        <Option Name="SimMode" Val="post-implementation"/>
         <Option Name="SrcSet" Val="sources_1"/>
         <Option Name="xsim.simulate.runtime" Val="50000ns"/>
         <Option Name="NLNetlistMode" Val="funcsim"/>
@@ -566,9 +578,7 @@
     </Run>
     <Run Id="top_calculator_0_0_synth_1" Type="Ft3:Synth" SrcSet="top_calculator_0_0" Part="xc7a35tcpg236-1" ConstrsSet="top_calculator_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/top_calculator_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -576,9 +586,7 @@
     </Run>
     <Run Id="top_xup_4_to_1_mux_vector_0_0_synth_1" Type="Ft3:Synth" SrcSet="top_xup_4_to_1_mux_vector_0_0" Part="xc7a35tcpg236-1" ConstrsSet="top_xup_4_to_1_mux_vector_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/top_xup_4_to_1_mux_vector_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -586,9 +594,7 @@
     </Run>
     <Run Id="top_xlconcat_0_0_synth_1" Type="Ft3:Synth" SrcSet="top_xlconcat_0_0" Part="xc7a35tcpg236-1" ConstrsSet="top_xlconcat_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/top_xlconcat_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -596,9 +602,7 @@
     </Run>
     <Run Id="top_xlconcat_1_0_synth_1" Type="Ft3:Synth" SrcSet="top_xlconcat_1_0" Part="xc7a35tcpg236-1" ConstrsSet="top_xlconcat_1_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/top_xlconcat_1_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -606,9 +610,7 @@
     </Run>
     <Run Id="top_xlconcat_2_0_synth_1" Type="Ft3:Synth" SrcSet="top_xlconcat_2_0" Part="xc7a35tcpg236-1" ConstrsSet="top_xlconcat_2_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/top_xlconcat_2_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -616,9 +618,7 @@
     </Run>
     <Run Id="top_xlconcat_0_1_synth_1" Type="Ft3:Synth" SrcSet="top_xlconcat_0_1" Part="xc7a35tcpg236-1" ConstrsSet="top_xlconcat_0_1" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/top_xlconcat_0_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -626,9 +626,7 @@
     </Run>
     <Run Id="top_c_counter_binary_0_0_synth_1" Type="Ft3:Synth" SrcSet="top_c_counter_binary_0_0" Part="xc7a35tcpg236-1" ConstrsSet="top_c_counter_binary_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/top_c_counter_binary_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -636,9 +634,7 @@
     </Run>
     <Run Id="top_xup_clk_divider_0_0_synth_1" Type="Ft3:Synth" SrcSet="top_xup_clk_divider_0_0" Part="xc7a35tcpg236-1" ConstrsSet="top_xup_clk_divider_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/top_xup_clk_divider_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -646,9 +642,7 @@
     </Run>
     <Run Id="top_two_four_decoder_0_0_synth_1" Type="Ft3:Synth" SrcSet="top_two_four_decoder_0_0" Part="xc7a35tcpg236-1" ConstrsSet="top_two_four_decoder_0_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/top_two_four_decoder_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -792,9 +786,7 @@
     </Run>
     <Run Id="top_calculator_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="top_calculator_0_0" Description="Default settings for Implementation." SynthRun="top_calculator_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -809,9 +801,7 @@
     </Run>
     <Run Id="top_xup_4_to_1_mux_vector_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="top_xup_4_to_1_mux_vector_0_0" Description="Default settings for Implementation." SynthRun="top_xup_4_to_1_mux_vector_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -826,9 +816,7 @@
     </Run>
     <Run Id="top_xlconcat_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="top_xlconcat_0_0" Description="Default settings for Implementation." SynthRun="top_xlconcat_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -843,9 +831,7 @@
     </Run>
     <Run Id="top_xlconcat_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="top_xlconcat_1_0" Description="Default settings for Implementation." SynthRun="top_xlconcat_1_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -860,9 +846,7 @@
     </Run>
     <Run Id="top_xlconcat_2_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="top_xlconcat_2_0" Description="Default settings for Implementation." SynthRun="top_xlconcat_2_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -877,9 +861,7 @@
     </Run>
     <Run Id="top_xlconcat_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="top_xlconcat_0_1" Description="Default settings for Implementation." SynthRun="top_xlconcat_0_1_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -894,9 +876,7 @@
     </Run>
     <Run Id="top_c_counter_binary_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="top_c_counter_binary_0_0" Description="Default settings for Implementation." SynthRun="top_c_counter_binary_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -911,9 +891,7 @@
     </Run>
     <Run Id="top_xup_clk_divider_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="top_xup_clk_divider_0_0" Description="Default settings for Implementation." SynthRun="top_xup_clk_divider_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -928,9 +906,7 @@
     </Run>
     <Run Id="top_two_four_decoder_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35tcpg236-1" ConstrsSet="top_two_four_decoder_0_0" Description="Default settings for Implementation." SynthRun="top_two_four_decoder_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

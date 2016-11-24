@@ -25,7 +25,8 @@ module top_ver(
     input wire SGN_N, N1, N0,
     input wire CLK,
     output wire [3:0] Y,
-    output wire AN3, AN2, AN1, AN0
+    output wire AN3, AN2, AN1, AN0,
+    output wire SGN_M_O, SGN_N_O
     );
 
 top U1(
@@ -33,7 +34,8 @@ top U1(
     .SGN_N(SGN_N), .N1(N1), .N0(N0),
     .CLK(CLK),
     .Y(Y),
-    .AN3(AN3), .AN2(AN2), .AN1(AN1), .AN0(AN0)
+    .AN3(AN3), .AN2(AN2), .AN1(AN1), .AN0(AN0),
+    .SGN_M_O(SGN_M_O), .SGN_N_O(SGN_N_O)
     );
 
 endmodule

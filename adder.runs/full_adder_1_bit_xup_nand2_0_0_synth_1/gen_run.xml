@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="full_adder_1_bit_xup_nand2_0_0_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1479955281">
-  <File Type="RDS-PROPCONSTRS" Name="full_adder_1_bit_xup_nand2_0_0_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="full_adder_1_bit_xup_nand2_0_0.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="full_adder_1_bit_xup_nand2_0_0_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="full_adder_1_bit_xup_nand2_0_0.vds"/>
   <File Type="RDS-UTIL" Name="full_adder_1_bit_xup_nand2_0_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="full_adder_1_bit_xup_nand2_0_0_utilization_synth.pb"/>

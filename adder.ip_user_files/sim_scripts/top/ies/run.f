@@ -89,6 +89,10 @@
   "../../../bd/top/ip/top_two_four_decoder_0_0/src/two_four_decoder_xup_and2_0_2/sim/two_four_decoder_xup_and2_0_2.v" \
   "../../../bd/top/ipshared/0d3e/src/two_four_decoder.v" \
   "../../../bd/top/ip/top_two_four_decoder_0_0/sim/top_two_four_decoder_0_0.v" \
+  "../../../bd/top/ip/top_xup_inv_0_0/sim/top_xup_inv_0_0.v" \
+  "../../../bd/top/ip/top_xup_inv_1_0/sim/top_xup_inv_1_0.v" \
+  "../../../bd/top/ip/top_xup_inv_2_0/sim/top_xup_inv_2_0.v" \
+  "../../../bd/top/ip/top_xup_inv_3_0/sim/top_xup_inv_3_0.v" \
 -endlib
 -makelib ies/xil_defaultlib \
   glbl.v

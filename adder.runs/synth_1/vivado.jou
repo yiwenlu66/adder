@@ -2,11 +2,11 @@
 # Vivado v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Thu Nov 24 17:06:33 2016
-# Process ID: 4376
+# Start of session at: Thu Nov 24 20:55:22 2016
+# Process ID: 9004
 # Current directory: C:/Users/peter/adder/adder.runs/synth_1
-# Command line: vivado.exe -log peripheral_test_ver.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source peripheral_test_ver.tcl
-# Log file: C:/Users/peter/adder/adder.runs/synth_1/peripheral_test_ver.vds
+# Command line: vivado.exe -log top_display.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_display.tcl
+# Log file: C:/Users/peter/adder/adder.runs/synth_1/top_display.vds
 # Journal file: C:/Users/peter/adder/adder.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source peripheral_test_ver.tcl -notrace
+source top_display.tcl -notrace

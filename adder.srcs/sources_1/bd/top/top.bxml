@@ -2,9 +2,9 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="top" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1479987610"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1479987610"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1479987610"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1479991990"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1479991990"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1479991990"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\top_calculator_0_0_1\top_calculator_0_0.xci" Type="IP">
         <Instance HierarchyPath="calculator"/>
@@ -95,6 +95,38 @@
       </File>
       <File Name="ip\top_two_four_decoder_0_0\top_two_four_decoder_0_0.xci" Type="IP">
         <Instance HierarchyPath="two_four_decoder_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\top_xup_inv_0_0\top_xup_inv_0_0.xci" Type="IP">
+        <Instance HierarchyPath="xup_inv_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\top_xup_inv_1_0\top_xup_inv_1_0.xci" Type="IP">
+        <Instance HierarchyPath="xup_inv_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\top_xup_inv_2_0\top_xup_inv_2_0.xci" Type="IP">
+        <Instance HierarchyPath="xup_inv_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\top_xup_inv_3_0\top_xup_inv_3_0.xci" Type="IP">
+        <Instance HierarchyPath="xup_inv_3"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
