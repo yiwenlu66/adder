@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Nov 24 11:20:51 2016" VIVADOVERSION="2016.3">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Nov 24 11:26:29 2016" VIVADOVERSION="2016.3">
 
   <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="complement" PACKAGE="cpg236" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
     <PORT DIR="I" NAME="A3" SIGIS="undef" SIGNAME="External_Ports_A3">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="xup_inv_3" PORT="a"/>
+        <CONNECTION INSTANCE="xup_xor2_3" PORT="a"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="A2" SIGIS="undef" SIGNAME="External_Ports_A2">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="xup_inv_2" PORT="a"/>
+        <CONNECTION INSTANCE="xup_xor2_2" PORT="a"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="A1" SIGIS="undef" SIGNAME="External_Ports_A1">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="xup_inv_1" PORT="a"/>
+        <CONNECTION INSTANCE="xup_xor2_1" PORT="a"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="A0" SIGIS="undef" SIGNAME="External_Ports_A0">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="xup_inv_0" PORT="a"/>
+        <CONNECTION INSTANCE="xup_xor2_0" PORT="a"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" NAME="Y3" SIGIS="undef" SIGNAME="full_adder_4_bit_0_S3">
@@ -44,6 +44,15 @@
         <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="S0"/>
       </CONNECTIONS>
     </PORT>
+    <PORT DIR="I" NAME="COMP" SIGIS="undef" SIGNAME="External_Ports_COMP">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="A0"/>
+        <CONNECTION INSTANCE="xup_xor2_3" PORT="b"/>
+        <CONNECTION INSTANCE="xup_xor2_2" PORT="b"/>
+        <CONNECTION INSTANCE="xup_xor2_1" PORT="b"/>
+        <CONNECTION INSTANCE="xup_xor2_0" PORT="b"/>
+      </CONNECTIONS>
+    </PORT>
   </EXTERNALPORTS>
 
   <EXTERNALINTERFACES/>
@@ -56,9 +65,9 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" NAME="A0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+        <PORT DIR="I" NAME="A0" SIGIS="undef" SIGNAME="External_Ports_COMP">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="COMP"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="A1" SIGIS="undef" SIGNAME="xlconstant_1_dout">
@@ -76,24 +85,24 @@
             <CONNECTION INSTANCE="xlconstant_3" PORT="dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="B0" SIGIS="undef" SIGNAME="xup_inv_0_y">
+        <PORT DIR="I" NAME="B0" SIGIS="undef" SIGNAME="xup_xor2_0_y">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xup_inv_0" PORT="y"/>
+            <CONNECTION INSTANCE="xup_xor2_0" PORT="y"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="B1" SIGIS="undef" SIGNAME="xup_inv_1_y">
+        <PORT DIR="I" NAME="B1" SIGIS="undef" SIGNAME="xup_xor2_1_y">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xup_inv_1" PORT="y"/>
+            <CONNECTION INSTANCE="xup_xor2_1" PORT="y"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="B2" SIGIS="undef" SIGNAME="xup_inv_2_y">
+        <PORT DIR="I" NAME="B2" SIGIS="undef" SIGNAME="xup_xor2_2_y">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xup_inv_2" PORT="y"/>
+            <CONNECTION INSTANCE="xup_xor2_2" PORT="y"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="B3" SIGIS="undef" SIGNAME="xup_inv_3_y">
+        <PORT DIR="I" NAME="B3" SIGIS="undef" SIGNAME="xup_xor2_3_y">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xup_inv_3" PORT="y"/>
+            <CONNECTION INSTANCE="xup_xor2_3" PORT="y"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="CI" SIGIS="undef" SIGNAME="xlconstant_4_dout">
@@ -120,23 +129,6 @@
         <PORT DIR="O" NAME="S3" SIGIS="undef" SIGNAME="full_adder_4_bit_0_S3">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="Y3"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE FULLNAME="/xlconstant_0" HWVERSION="1.1" INSTANCE="xlconstant_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="CONST_VAL" VALUE="1"/>
-        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="Component_Name" VALUE="complement_xlconstant_0_0"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="A0"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -210,11 +202,11 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE FULLNAME="/xup_inv_0" HWVERSION="1.0" INSTANCE="xup_inv_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xup_inv" VLNV="xilinx.com:xup:xup_inv:1.0">
+    <MODULE FULLNAME="/xup_xor2_0" HWVERSION="1.0" INSTANCE="xup_xor2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xup_xor2" VLNV="xilinx.com:xup:xup_xor2:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="DELAY" VALUE="3"/>
-        <PARAMETER NAME="Component_Name" VALUE="complement_xup_inv_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="complement_xup_xor2_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
@@ -223,7 +215,12 @@
             <CONNECTION INSTANCE="External_Ports" PORT="A0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="y" SIGIS="undef" SIGNAME="xup_inv_0_y">
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="External_Ports_COMP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="COMP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y" SIGIS="undef" SIGNAME="xup_xor2_0_y">
           <CONNECTIONS>
             <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="B0"/>
           </CONNECTIONS>
@@ -231,11 +228,11 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE FULLNAME="/xup_inv_1" HWVERSION="1.0" INSTANCE="xup_inv_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xup_inv" VLNV="xilinx.com:xup:xup_inv:1.0">
+    <MODULE FULLNAME="/xup_xor2_1" HWVERSION="1.0" INSTANCE="xup_xor2_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xup_xor2" VLNV="xilinx.com:xup:xup_xor2:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="DELAY" VALUE="3"/>
-        <PARAMETER NAME="Component_Name" VALUE="complement_xup_inv_1_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="complement_xup_xor2_1_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
@@ -244,7 +241,12 @@
             <CONNECTION INSTANCE="External_Ports" PORT="A1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="y" SIGIS="undef" SIGNAME="xup_inv_1_y">
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="External_Ports_COMP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="COMP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y" SIGIS="undef" SIGNAME="xup_xor2_1_y">
           <CONNECTIONS>
             <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="B1"/>
           </CONNECTIONS>
@@ -252,11 +254,11 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE FULLNAME="/xup_inv_2" HWVERSION="1.0" INSTANCE="xup_inv_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xup_inv" VLNV="xilinx.com:xup:xup_inv:1.0">
+    <MODULE FULLNAME="/xup_xor2_2" HWVERSION="1.0" INSTANCE="xup_xor2_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xup_xor2" VLNV="xilinx.com:xup:xup_xor2:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="DELAY" VALUE="3"/>
-        <PARAMETER NAME="Component_Name" VALUE="complement_xup_inv_2_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="complement_xup_xor2_2_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
@@ -265,7 +267,12 @@
             <CONNECTION INSTANCE="External_Ports" PORT="A2"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="y" SIGIS="undef" SIGNAME="xup_inv_2_y">
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="External_Ports_COMP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="COMP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y" SIGIS="undef" SIGNAME="xup_xor2_2_y">
           <CONNECTIONS>
             <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="B2"/>
           </CONNECTIONS>
@@ -273,11 +280,11 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE FULLNAME="/xup_inv_3" HWVERSION="1.0" INSTANCE="xup_inv_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xup_inv" VLNV="xilinx.com:xup:xup_inv:1.0">
+    <MODULE FULLNAME="/xup_xor2_3" HWVERSION="1.0" INSTANCE="xup_xor2_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xup_xor2" VLNV="xilinx.com:xup:xup_xor2:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="DELAY" VALUE="3"/>
-        <PARAMETER NAME="Component_Name" VALUE="complement_xup_inv_3_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="complement_xup_xor2_3_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
@@ -286,7 +293,12 @@
             <CONNECTION INSTANCE="External_Ports" PORT="A3"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="y" SIGIS="undef" SIGNAME="xup_inv_3_y">
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="External_Ports_COMP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="COMP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y" SIGIS="undef" SIGNAME="xup_xor2_3_y">
           <CONNECTIONS>
             <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="B3"/>
           </CONNECTIONS>

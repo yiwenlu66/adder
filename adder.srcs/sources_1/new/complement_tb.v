@@ -22,10 +22,12 @@
 
 module complement_tb;
 
+reg COMP;
 reg [3:0] A;
 wire [3:0] Y;
 
 complement_ver U1(
+    .CC(COMP),
     .AA(A),
     .YY(Y)
     );
@@ -35,11 +37,14 @@ parameter delay = 200;
 initial begin
     A = 4'b0000;
     repeat(16) begin
+        COMP = 1'b0;
+        #delay;
+        COMP = 1'b1;
         #delay;
         A = A + 1;
     end
 end
 
-initial $monitor($time, , , "A=%b Y=%b", A, Y);
+initial $monitor($time, , , "COMP=%b A=%b Y=%b", COMP, A, Y);
 
 endmodule

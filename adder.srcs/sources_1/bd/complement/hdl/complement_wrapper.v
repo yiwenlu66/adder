@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-//Date        : Thu Nov 24 11:20:48 2016
+//Date        : Thu Nov 24 11:26:27 2016
 //Host        : DESKTOP-82NDHVB running 64-bit major release  (build 9200)
 //Command     : generate_target complement_wrapper.bd
 //Design      : complement_wrapper
@@ -14,6 +14,7 @@ module complement_wrapper
     A1,
     A2,
     A3,
+    COMP,
     Y0,
     Y1,
     Y2,
@@ -22,6 +23,7 @@ module complement_wrapper
   input A1;
   input A2;
   input A3;
+  input COMP;
   output Y0;
   output Y1;
   output Y2;
@@ -31,6 +33,7 @@ module complement_wrapper
   wire A1;
   wire A2;
   wire A3;
+  wire COMP;
   wire Y0;
   wire Y1;
   wire Y2;
@@ -41,6 +44,7 @@ module complement_wrapper
         .A1(A1),
         .A2(A2),
         .A3(A3),
+        .COMP(COMP),
         .Y0(Y0),
         .Y1(Y1),
         .Y2(Y2),

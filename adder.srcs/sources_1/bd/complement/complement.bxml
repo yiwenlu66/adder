@@ -2,52 +2,12 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="complement" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1479957651"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1479957651"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1479957651"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1479957990"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1479957990"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1479957990"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
-      <File Name="ip\complement_xup_inv_0_0\complement_xup_inv_0_0.xci" Type="IP">
-        <Instance HierarchyPath="xup_inv_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\complement_xup_inv_1_0\complement_xup_inv_1_0.xci" Type="IP">
-        <Instance HierarchyPath="xup_inv_1"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\complement_xup_inv_2_0\complement_xup_inv_2_0.xci" Type="IP">
-        <Instance HierarchyPath="xup_inv_2"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\complement_xup_inv_3_0\complement_xup_inv_3_0.xci" Type="IP">
-        <Instance HierarchyPath="xup_inv_3"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
       <File Name="ip\complement_full_adder_4_bit_0_0\complement_full_adder_4_bit_0_0.xci" Type="IP">
         <Instance HierarchyPath="full_adder_4_bit_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\complement_xlconstant_0_0\complement_xlconstant_0_0.xci" Type="IP">
-        <Instance HierarchyPath="xlconstant_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -88,6 +48,38 @@
       </File>
       <File Name="hdl\complement.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\complement_xup_xor2_0_0\complement_xup_xor2_0_0.xci" Type="IP">
+        <Instance HierarchyPath="xup_xor2_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\complement_xup_xor2_1_0\complement_xup_xor2_1_0.xci" Type="IP">
+        <Instance HierarchyPath="xup_xor2_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\complement_xup_xor2_2_0\complement_xup_xor2_2_0.xci" Type="IP">
+        <Instance HierarchyPath="xup_xor2_2"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\complement_xup_xor2_3_0\complement_xup_xor2_3_0.xci" Type="IP">
+        <Instance HierarchyPath="xup_xor2_3"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
