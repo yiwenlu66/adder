@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Nov 24 12:54:48 2016" VIVADOVERSION="2016.3">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="calculator" PACKAGE="cpg236" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="SGN_M" SIGIS="undef" SIGNAME="External_Ports_SGN_M">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="complement_0" PORT="COMP"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="M1" SIGIS="undef" SIGNAME="External_Ports_M1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="complement_0" PORT="A1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="M0" SIGIS="undef" SIGNAME="External_Ports_M0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="complement_0" PORT="A0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="SGN_N" SIGIS="undef" SIGNAME="External_Ports_SGN_N">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="complement_2" PORT="COMP"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="N1" SIGIS="undef" SIGNAME="External_Ports_N1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="complement_2" PORT="A1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="N0" SIGIS="undef" SIGNAME="External_Ports_N0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="complement_2" PORT="A0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SGN_S" SIGIS="undef" SIGNAME="full_adder_4_bit_0_S3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="S3"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="S2" SIGIS="undef" SIGNAME="complement_1_Y2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="complement_1" PORT="Y2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="S1" SIGIS="undef" SIGNAME="complement_1_Y1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="complement_1" PORT="Y1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="S0" SIGIS="undef" SIGNAME="complement_1_Y0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="complement_1" PORT="Y0"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/complement_0" HWVERSION="1.0" INSTANCE="complement_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="complement" VLNV="xilinx.com:user:complement:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="calculator_complement_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A0" SIGIS="undef" SIGNAME="External_Ports_M0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="M0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A1" SIGIS="undef" SIGNAME="External_Ports_M1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="M1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A2" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A3" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="COMP" SIGIS="undef" SIGNAME="External_Ports_SGN_M">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SGN_M"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y0" SIGIS="undef" SIGNAME="complement_0_Y0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="A0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y1" SIGIS="undef" SIGNAME="complement_0_Y1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="A1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y2" SIGIS="undef" SIGNAME="complement_0_Y2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="A2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y3" SIGIS="undef" SIGNAME="complement_0_Y3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="A3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/complement_1" HWVERSION="1.0" INSTANCE="complement_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="complement" VLNV="xilinx.com:user:complement:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="calculator_complement_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A0" SIGIS="undef" SIGNAME="full_adder_4_bit_0_S0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="S0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A1" SIGIS="undef" SIGNAME="full_adder_4_bit_0_S1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="S1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A2" SIGIS="undef" SIGNAME="full_adder_4_bit_0_S2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="S2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A3" SIGIS="undef" SIGNAME="full_adder_4_bit_0_S3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="S3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="COMP" SIGIS="undef" SIGNAME="full_adder_4_bit_0_S3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="S3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y0" SIGIS="undef" SIGNAME="complement_1_Y0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y1" SIGIS="undef" SIGNAME="complement_1_Y1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y2" SIGIS="undef" SIGNAME="complement_1_Y2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y3" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/complement_2" HWVERSION="1.0" INSTANCE="complement_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="complement" VLNV="xilinx.com:user:complement:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="calculator_complement_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A0" SIGIS="undef" SIGNAME="External_Ports_N0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="N0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A1" SIGIS="undef" SIGNAME="External_Ports_N1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="N1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A2" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A3" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="COMP" SIGIS="undef" SIGNAME="External_Ports_SGN_N">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SGN_N"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y0" SIGIS="undef" SIGNAME="complement_2_Y0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="B0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y1" SIGIS="undef" SIGNAME="complement_2_Y1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="B1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y2" SIGIS="undef" SIGNAME="complement_2_Y2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="B2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Y3" SIGIS="undef" SIGNAME="complement_2_Y3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="B3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/full_adder_4_bit_0" HWVERSION="1.0" INSTANCE="full_adder_4_bit_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="full_adder_4_bit" VLNV="xilinx.com:user:full_adder_4_bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="calculator_full_adder_4_bit_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="A0" SIGIS="undef" SIGNAME="complement_0_Y0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="complement_0" PORT="Y0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A1" SIGIS="undef" SIGNAME="complement_0_Y1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="complement_0" PORT="Y1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A2" SIGIS="undef" SIGNAME="complement_0_Y2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="complement_0" PORT="Y2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="A3" SIGIS="undef" SIGNAME="complement_0_Y3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="complement_0" PORT="Y3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B0" SIGIS="undef" SIGNAME="complement_2_Y0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="complement_2" PORT="Y0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B1" SIGIS="undef" SIGNAME="complement_2_Y1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="complement_2" PORT="Y1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B2" SIGIS="undef" SIGNAME="complement_2_Y2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="complement_2" PORT="Y2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="B3" SIGIS="undef" SIGNAME="complement_2_Y3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="complement_2" PORT="Y3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CI" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CO" SIGIS="undef"/>
+        <PORT DIR="O" NAME="S0" SIGIS="undef" SIGNAME="full_adder_4_bit_0_S0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="complement_1" PORT="A0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S1" SIGIS="undef" SIGNAME="full_adder_4_bit_0_S1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="complement_1" PORT="A1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S2" SIGIS="undef" SIGNAME="full_adder_4_bit_0_S2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="complement_1" PORT="A2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S3" SIGIS="undef" SIGNAME="full_adder_4_bit_0_S3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="complement_1" PORT="A3"/>
+            <CONNECTION INSTANCE="complement_1" PORT="COMP"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="SGN_S"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/xlconstant_0" HWVERSION="1.1" INSTANCE="xlconstant_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="0"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="calculator_xlconstant_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="complement_0" PORT="A2"/>
+            <CONNECTION INSTANCE="complement_0" PORT="A3"/>
+            <CONNECTION INSTANCE="complement_2" PORT="A2"/>
+            <CONNECTION INSTANCE="complement_2" PORT="A3"/>
+            <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="CI"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>
