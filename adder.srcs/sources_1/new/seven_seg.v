@@ -21,6 +21,7 @@
 
 
 module seven_seg(
+    input EN,
     input A2, A1, A0,
     output a, b, c, d, e, f, g
     );
@@ -31,17 +32,21 @@ reg [6:0] segments;
 assign A = {A2, A1, A0};
 
 always @(*)
-case (A)
-    3'b000: segments = 7'b0000001;
-    3'b001: segments = 7'b1001111;
-    3'b010: segments = 7'b0010010;
-    3'b011: segments = 7'b0000110;
-    3'b100: segments = 7'b1001100;
-    3'b101: segments = 7'b0100100;
-    3'b110: segments = 7'b0100000;
-    3'b111: segments = 7'b0001111;
-    default: segments = 7'b0000000;
-endcase
+    if (EN) begin
+        case (A)
+            3'b000: segments = 7'b0000001;
+            3'b001: segments = 7'b1001111;
+            3'b010: segments = 7'b0010010;
+            3'b011: segments = 7'b0000110;
+            3'b100: segments = 7'b1001100;
+            3'b101: segments = 7'b0100100;
+            3'b110: segments = 7'b0100000;
+            3'b111: segments = 7'b1111110;  // 7 never appears, used for minus sign
+        endcase
+    end
+    else begin
+        segments = 7'b1111111;
+    end
 
 assign {a, b, c, d, e, f, g} = segments;
 

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1479978914">
-  <File Type="PWROPT-DRC" Name="peripheral_test_ver_drc_pwropted.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="peripheral_test_ver_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="peripheral_test_ver_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="peripheral_test_ver_power_routed.rpx"/>
   <File Type="PA-TCL" Name="peripheral_test_ver.tcl"/>
-  <File Type="OPT-HWDEF" Name="peripheral_test_ver.hwdef"/>
+  <File Type="INIT-TIMING" Name="peripheral_test_ver_timing_summary_init.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="peripheral_test_ver_methodology_drc_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="peripheral_test_ver_drc_pwropted.rpt"/>
   <File Type="RDI-RDI" Name="peripheral_test_ver.vdi"/>
   <File Type="OPT-DCP" Name="peripheral_test_ver_opt.dcp"/>
+  <File Type="OPT-HWDEF" Name="peripheral_test_ver.hwdef"/>
   <File Type="OPT-DRC" Name="peripheral_test_ver_drc_opted.rpt"/>
   <File Type="OPT-TIMING" Name="peripheral_test_ver_timing_summary_opted.rpt"/>
   <File Type="PWROPT-DCP" Name="peripheral_test_ver_pwropt.dcp"/>
@@ -31,14 +31,14 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="peripheral_test_ver_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="peripheral_test_ver_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="peripheral_test_ver_drc_routed.pb"/>
-  <File Type="BG-BIN" Name="peripheral_test_ver.bin"/>
   <File Type="ROUTE-DRC-RPX" Name="peripheral_test_ver_drc_routed.rpx"/>
-  <File Type="BG-DRC" Name="peripheral_test_ver.drc"/>
+  <File Type="BG-BIN" Name="peripheral_test_ver.bin"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="peripheral_test_ver_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-MSK" Name="peripheral_test_ver.msk"/>
+  <File Type="BG-DRC" Name="peripheral_test_ver.drc"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="peripheral_test_ver_methodology_drc_routed.rpx"/>
-  <File Type="BG-BGN" Name="peripheral_test_ver.bgn"/>
+  <File Type="BITSTR-MSK" Name="peripheral_test_ver.msk"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="peripheral_test_ver_methodology_drc_routed.pb"/>
+  <File Type="BG-BGN" Name="peripheral_test_ver.bgn"/>
   <File Type="ROUTE-PWR" Name="peripheral_test_ver_power_routed.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="peripheral_test_ver_power_summary_routed.pb"/>
   <File Type="ROUTE-STATUS" Name="peripheral_test_ver_route_status.rpt"/>
@@ -217,12 +217,12 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_xnor2_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_inv_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_nand2_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_xor2_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_nand2_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_inv_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_xnor2_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_nand2_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_nand2_2_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="complement_xlconstant_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="complement_full_adder_4_bit_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="complement_xlconstant_1_0"/>
 </GenRun>

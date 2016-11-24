@@ -1,8 +1,118 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.srcs/sources_1/new/seven_seg.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module seven_seg
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.srcs/sources_1/new/peripheral_test_ver.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module peripheral_test_ver
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.srcs/sources_1/new/peripheral_test_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module peripheral_test_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/src/calculator_complement_0_0/src/complement_full_adder_4_bit_0_0/src/full_adder_4_bit_full_adder_1_bit_0_0/ipshared/7bd1/xup_xor2.srcs/sources_1/new/xup_xor2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xup_xor2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/src/calculator_complement_0_0/src/complement_full_adder_4_bit_0_0/src/full_adder_4_bit_full_adder_1_bit_0_0/src/full_adder_1_bit_xup_xor2_0_0/sim/full_adder_1_bit_xup_xor2_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1_bit_xup_xor2_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/src/calculator_complement_0_0/src/complement_full_adder_4_bit_0_0/src/full_adder_4_bit_full_adder_1_bit_0_0/ipshared/35a3/xup_nand2.srcs/sources_1/new/xup_nand2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xup_nand2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/src/calculator_complement_0_0/src/complement_full_adder_4_bit_0_0/src/full_adder_4_bit_full_adder_1_bit_0_0/src/full_adder_1_bit_xup_nand2_0_0/sim/full_adder_1_bit_xup_nand2_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1_bit_xup_nand2_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/src/calculator_complement_0_0/src/complement_full_adder_4_bit_0_0/src/full_adder_4_bit_full_adder_1_bit_0_0/src/full_adder_1_bit_xup_nand2_1_0/sim/full_adder_1_bit_xup_nand2_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1_bit_xup_nand2_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/src/calculator_complement_0_0/src/complement_full_adder_4_bit_0_0/src/full_adder_4_bit_full_adder_1_bit_0_0/src/full_adder_1_bit_xup_nand2_2_0/sim/full_adder_1_bit_xup_nand2_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1_bit_xup_nand2_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/src/calculator_complement_0_0/src/complement_full_adder_4_bit_0_0/src/full_adder_4_bit_full_adder_1_bit_0_0/ipshared/e3e7/xup_inv.srcs/sources_1/new/xup_inv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xup_inv
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/src/calculator_complement_0_0/src/complement_full_adder_4_bit_0_0/src/full_adder_4_bit_full_adder_1_bit_0_0/src/full_adder_1_bit_xup_inv_0_0/sim/full_adder_1_bit_xup_inv_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1_bit_xup_inv_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/src/calculator_complement_0_0/src/complement_full_adder_4_bit_0_0/src/full_adder_4_bit_full_adder_1_bit_0_0/ipshared/fb55/xup_xnor2.srcs/sources_1/new/xup_xnor2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xup_xnor2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/src/calculator_complement_0_0/src/complement_full_adder_4_bit_0_0/src/full_adder_4_bit_full_adder_1_bit_0_0/src/full_adder_1_bit_xup_xnor2_0_0/sim/full_adder_1_bit_xup_xnor2_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1_bit_xup_xnor2_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/src/calculator_complement_0_0/src/complement_full_adder_4_bit_0_0/ipshared/49fc/src/full_adder_1_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_1_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/src/calculator_complement_0_0/src/complement_full_adder_4_bit_0_0/src/full_adder_4_bit_full_adder_1_bit_0_0/sim/full_adder_4_bit_full_adder_1_bit_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_4_bit_full_adder_1_bit_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/src/calculator_complement_0_0/src/complement_full_adder_4_bit_0_0/src/full_adder_4_bit_full_adder_1_bit_0_1/sim/full_adder_4_bit_full_adder_1_bit_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_4_bit_full_adder_1_bit_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/src/calculator_complement_0_0/src/complement_full_adder_4_bit_0_0/src/full_adder_4_bit_full_adder_1_bit_0_2/sim/full_adder_4_bit_full_adder_1_bit_0_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_4_bit_full_adder_1_bit_0_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/src/calculator_complement_0_0/src/complement_full_adder_4_bit_0_0/src/full_adder_4_bit_full_adder_1_bit_0_3/sim/full_adder_4_bit_full_adder_1_bit_0_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_4_bit_full_adder_1_bit_0_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/src/calculator_complement_0_0/ipshared/a5f8/src/full_adder_4_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder_4_bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/src/calculator_complement_0_0/src/complement_full_adder_4_bit_0_0/sim/complement_full_adder_4_bit_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module complement_full_adder_4_bit_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/src/calculator_complement_0_0/ipshared/e147/xlconstant.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xlconstant
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/src/calculator_complement_0_0/src/complement_xlconstant_1_0/sim/complement_xlconstant_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module complement_xlconstant_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/src/calculator_complement_0_0/src/complement_xup_xor2_0_0/sim/complement_xup_xor2_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module complement_xup_xor2_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/src/calculator_complement_0_0/src/complement_xup_xor2_1_0/sim/complement_xup_xor2_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module complement_xup_xor2_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/src/calculator_complement_0_0/src/complement_xup_xor2_2_0/sim/complement_xup_xor2_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module complement_xup_xor2_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/src/calculator_complement_0_0/src/complement_xup_xor2_3_0/sim/complement_xup_xor2_3_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module complement_xup_xor2_3_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/ipshared/360c/src/complement.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module complement
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/src/calculator_complement_0_0/sim/calculator_complement_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculator_complement_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/src/calculator_complement_1_0/sim/calculator_complement_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculator_complement_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/src/calculator_complement_2_0/sim/calculator_complement_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculator_complement_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/src/calculator_full_adder_4_bit_0_0/sim/calculator_full_adder_4_bit_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculator_full_adder_4_bit_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/src/calculator_xlconstant_0_0/sim/calculator_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculator_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ipshared/961e/src/calculator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module calculator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_calculator_0_0_1/sim/top_calculator_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_calculator_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ipshared/625c/xup_4_to_1_mux_vector.srcs/sources_1/new/xup_4_to_1_mux_vector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xup_4_to_1_mux_vector
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_xup_4_to_1_mux_vector_0_0_1/sim/top_xup_4_to_1_mux_vector_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_xup_4_to_1_mux_vector_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ipshared/2e37/xlconcat.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xlconcat
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_xlconcat_0_0/sim/top_xlconcat_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_xlconcat_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_xlconstant_0_0/sim/top_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_xlconcat_1_0/sim/top_xlconcat_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_xlconcat_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_xlconcat_2_0/sim/top_xlconcat_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_xlconcat_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_xlconstant_1_1/sim/top_xlconstant_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_xlconstant_1_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_xlconcat_0_1/sim/top_xlconcat_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_xlconcat_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ipshared/4c27/xup_clk_divider.srcs/sources_1/new/xup_clk_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xup_clk_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_xup_clk_divider_0_0_1/sim/top_xup_clk_divider_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_xup_clk_divider_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/hdl/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_two_four_decoder_0_0/ipshared/c49f/xlslice.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xlslice
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_two_four_decoder_0_0/src/two_four_decoder_xlslice_0_0/sim/two_four_decoder_xlslice_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module two_four_decoder_xlslice_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_two_four_decoder_0_0/src/two_four_decoder_xlslice_1_0/sim/two_four_decoder_xlslice_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module two_four_decoder_xlslice_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_two_four_decoder_0_0/src/two_four_decoder_xup_inv_0_0/sim/two_four_decoder_xup_inv_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module two_four_decoder_xup_inv_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_two_four_decoder_0_0/src/two_four_decoder_xup_inv_1_0/sim/two_four_decoder_xup_inv_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module two_four_decoder_xup_inv_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_two_four_decoder_0_0/ipshared/778c/xup_and2.srcs/sources_1/new/xup_and2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xup_and2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_two_four_decoder_0_0/src/two_four_decoder_xup_and2_0_0/sim/two_four_decoder_xup_and2_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module two_four_decoder_xup_and2_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_two_four_decoder_0_0/src/two_four_decoder_xup_and2_1_0/sim/two_four_decoder_xup_and2_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module two_four_decoder_xup_and2_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_two_four_decoder_0_0/src/two_four_decoder_xup_and2_0_1/sim/two_four_decoder_xup_and2_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module two_four_decoder_xup_and2_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_two_four_decoder_0_0/src/two_four_decoder_xup_and2_0_2/sim/two_four_decoder_xup_and2_0_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module two_four_decoder_xup_and2_0_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ipshared/0d3e/src/two_four_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module two_four_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_two_four_decoder_0_0/sim/top_two_four_decoder_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_two_four_decoder_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.srcs/sources_1/new/top_ver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_ver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.srcs/sources_1/new/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/peter/adder/adder.sim/sim_1/behav/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/peter/adder/adder.ip_user_files/bd/top/ip/top_c_counter_binary_0_0/sim/top_c_counter_binary_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_c_counter_binary_0_0

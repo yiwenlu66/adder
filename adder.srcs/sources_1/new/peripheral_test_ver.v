@@ -39,7 +39,7 @@ module peripheral_test_ver(
     );
 
 seven_seg U1(
-    .A2(A2), .A1(A1), .A0(A0),
+    .A2(A2), .A1(A1), .A0(A0), .EN(1),
     .a(a), .b(b), .c(c), .d(d), .e(e), .f(f), .g(g)
     );
 

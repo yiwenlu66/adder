@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1479978911">
-  <File Type="RDS-PROPCONSTRS" Name="peripheral_test_ver_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="peripheral_test_ver.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="peripheral_test_ver_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="peripheral_test_ver.vds"/>
   <File Type="RDS-UTIL" Name="peripheral_test_ver_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="peripheral_test_ver_utilization_synth.pb"/>
@@ -157,12 +157,12 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_xnor2_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_inv_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_nand2_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_xor2_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_nand2_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_inv_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_xnor2_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_nand2_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="full_adder_1_bit_xup_nand2_2_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="complement_xlconstant_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="complement_full_adder_4_bit_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="complement_xlconstant_1_0"/>
 </GenRun>
