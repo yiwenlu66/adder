@@ -163,6 +163,7 @@ proc create_root_design { parentCell } {
   set B1 [ create_bd_port -dir I B1 ]
   set B2 [ create_bd_port -dir I B2 ]
   set B3 [ create_bd_port -dir I B3 ]
+  set CI [ create_bd_port -dir I CI ]
   set CO [ create_bd_port -dir O CO ]
   set S0 [ create_bd_port -dir O S0 ]
   set S1 [ create_bd_port -dir O S1 ]
@@ -181,12 +182,6 @@ proc create_root_design { parentCell } {
   # Create instance: full_adder_1_bit_3, and set properties
   set full_adder_1_bit_3 [ create_bd_cell -type ip -vlnv xilinx.com:user:full_adder_1_bit:1.0 full_adder_1_bit_3 ]
 
-  # Create instance: xlconstant_0, and set properties
-  set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
-  set_property -dict [ list \
-CONFIG.CONST_VAL {0} \
- ] $xlconstant_0
-
   # Create port connections
   connect_bd_net -net A0_1 [get_bd_ports A0] [get_bd_pins full_adder_1_bit_0/A]
   connect_bd_net -net A1_1 [get_bd_ports A1] [get_bd_pins full_adder_1_bit_1/A]
@@ -196,6 +191,7 @@ CONFIG.CONST_VAL {0} \
   connect_bd_net -net B1_1 [get_bd_ports B1] [get_bd_pins full_adder_1_bit_1/B]
   connect_bd_net -net B2_1 [get_bd_ports B2] [get_bd_pins full_adder_1_bit_2/B]
   connect_bd_net -net B3_1 [get_bd_ports B3] [get_bd_pins full_adder_1_bit_3/B]
+  connect_bd_net -net CI_1 [get_bd_ports CI] [get_bd_pins full_adder_1_bit_0/CI]
   connect_bd_net -net full_adder_1_bit_0_CO [get_bd_pins full_adder_1_bit_0/CO] [get_bd_pins full_adder_1_bit_1/CI]
   connect_bd_net -net full_adder_1_bit_0_S [get_bd_ports S0] [get_bd_pins full_adder_1_bit_0/S]
   connect_bd_net -net full_adder_1_bit_1_CO [get_bd_pins full_adder_1_bit_1/CO] [get_bd_pins full_adder_1_bit_2/CI]
@@ -204,7 +200,6 @@ CONFIG.CONST_VAL {0} \
   connect_bd_net -net full_adder_1_bit_2_S [get_bd_ports S2] [get_bd_pins full_adder_1_bit_2/S]
   connect_bd_net -net full_adder_1_bit_3_CO [get_bd_ports CO] [get_bd_pins full_adder_1_bit_3/CO]
   connect_bd_net -net full_adder_1_bit_3_S [get_bd_ports S3] [get_bd_pins full_adder_1_bit_3/S]
-  connect_bd_net -net xlconstant_0_dout [get_bd_pins full_adder_1_bit_0/CI] [get_bd_pins xlconstant_0/dout]
 
   # Create address segments
 
@@ -212,42 +207,42 @@ CONFIG.CONST_VAL {0} \
   regenerate_bd_layout -layout_string {
    guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
 #  -string -flagsOSRD
-preplace port S3 -pg 1 -lvl 5:-10 -defaultsOSRD -bot
-preplace port B0 -pg 1 -lvl 2:0 -defaultsOSRD -top
-preplace port B1 -pg 1 -lvl 3:0 -defaultsOSRD -top
-preplace port B2 -pg 1 -lvl 4:0 -defaultsOSRD -top
-preplace port B3 -pg 1 -lvl 5:0 -defaultsOSRD -top
+preplace port S3 -pg 1 -lvl 4:-10 -defaultsOSRD -bot
+preplace port B0 -pg 1 -lvl 1:0 -defaultsOSRD -top
+preplace port B1 -pg 1 -lvl 2:0 -defaultsOSRD -top
+preplace port B2 -pg 1 -lvl 3:0 -defaultsOSRD -top
+preplace port CI -pg 1 -y -50 -defaultsOSRD
+preplace port B3 -pg 1 -lvl 4:0 -defaultsOSRD -top
 preplace port CO -pg 1 -y 110 -defaultsOSRD
-preplace port A0 -pg 1 -lvl 2:20 -defaultsOSRD -top
-preplace port S0 -pg 1 -lvl 2:-10 -defaultsOSRD -bot
-preplace port A1 -pg 1 -lvl 3:20 -defaultsOSRD -top
-preplace port S1 -pg 1 -lvl 3:-10 -defaultsOSRD -bot
-preplace port A2 -pg 1 -lvl 4:20 -defaultsOSRD -top
-preplace port S2 -pg 1 -lvl 4:-10 -defaultsOSRD -bot
-preplace port A3 -pg 1 -lvl 5:20 -defaultsOSRD -top
-preplace inst full_adder_1_bit_3 -pg 1 -lvl 5 -y 30 -defaultsOSRD -orient R270
-preplace inst xlconstant_0 -pg 1 -lvl 1 -y -50 -defaultsOSRD
-preplace inst full_adder_1_bit_0 -pg 1 -lvl 2 -y 30 -defaultsOSRD -orient R270
-preplace inst full_adder_1_bit_1 -pg 1 -lvl 3 -y 30 -defaultsOSRD -orient R270
-preplace inst full_adder_1_bit_2 -pg 1 -lvl 4 -y 30 -defaultsOSRD -orient R270
-preplace netloc full_adder_1_bit_2_CO 1 4 1 130
-preplace netloc full_adder_1_bit_3_CO 1 5 1 N
-preplace netloc full_adder_1_bit_3_S 1 4 1 N
-preplace netloc full_adder_1_bit_0_CO 1 2 1 -190
-preplace netloc A3_1 1 4 1 N
-preplace netloc B3_1 1 4 1 N
-preplace netloc full_adder_1_bit_1_CO 1 3 1 -30
-preplace netloc full_adder_1_bit_0_S 1 1 1 N
-preplace netloc A2_1 1 3 1 N
-preplace netloc xlconstant_0_dout 1 1 1 N
-preplace netloc full_adder_1_bit_2_S 1 3 1 N
-preplace netloc B2_1 1 3 1 N
-preplace netloc full_adder_1_bit_1_S 1 2 1 N
-preplace netloc A1_1 1 2 1 N
-preplace netloc B1_1 1 2 1 N
-preplace netloc A0_1 1 1 1 N
-preplace netloc B0_1 1 1 1 N
-levelinfo -pg 1 -490 -410 -270 -110 50 210 310 -top -210 -bot 370
+preplace port A0 -pg 1 -lvl 1:20 -defaultsOSRD -top
+preplace port S0 -pg 1 -lvl 1:-10 -defaultsOSRD -bot
+preplace port A1 -pg 1 -lvl 2:20 -defaultsOSRD -top
+preplace port S1 -pg 1 -lvl 2:-10 -defaultsOSRD -bot
+preplace port A2 -pg 1 -lvl 3:20 -defaultsOSRD -top
+preplace port S2 -pg 1 -lvl 3:-10 -defaultsOSRD -bot
+preplace port A3 -pg 1 -lvl 4:20 -defaultsOSRD -top
+preplace inst full_adder_1_bit_3 -pg 1 -lvl 4 -y 30 -defaultsOSRD -orient R270
+preplace inst full_adder_1_bit_0 -pg 1 -lvl 1 -y 30 -defaultsOSRD -orient R270
+preplace inst full_adder_1_bit_1 -pg 1 -lvl 2 -y 30 -defaultsOSRD -orient R270
+preplace inst full_adder_1_bit_2 -pg 1 -lvl 3 -y 30 -defaultsOSRD -orient R270
+preplace netloc full_adder_1_bit_2_CO 1 3 1 130
+preplace netloc CI_1 1 0 1 NJ
+preplace netloc full_adder_1_bit_3_CO 1 4 1 N
+preplace netloc full_adder_1_bit_3_S 1 3 1 N
+preplace netloc full_adder_1_bit_0_CO 1 1 1 -190
+preplace netloc A3_1 1 3 1 N
+preplace netloc B3_1 1 3 1 N
+preplace netloc full_adder_1_bit_1_CO 1 2 1 -30
+preplace netloc full_adder_1_bit_0_S 1 0 1 N
+preplace netloc A2_1 1 2 1 N
+preplace netloc full_adder_1_bit_2_S 1 2 1 N
+preplace netloc B2_1 1 2 1 N
+preplace netloc full_adder_1_bit_1_S 1 1 1 N
+preplace netloc A1_1 1 1 1 N
+preplace netloc B1_1 1 1 1 N
+preplace netloc A0_1 1 0 1 N
+preplace netloc B0_1 1 0 1 N
+levelinfo -pg 1 -490 -270 -110 50 210 310 -top -210 -bot 370
 ",
 }
 

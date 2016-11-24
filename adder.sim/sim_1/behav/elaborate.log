@@ -7,20 +7,21 @@ Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.xup_inv
+Compiling module xil_defaultlib.full_adder_1_bit_xup_inv_0_0
 Compiling module xil_defaultlib.xup_nand2
 Compiling module xil_defaultlib.full_adder_1_bit_xup_nand2_0_0
 Compiling module xil_defaultlib.full_adder_1_bit_xup_nand2_1_0
 Compiling module xil_defaultlib.full_adder_1_bit_xup_nand2_2_0
+Compiling module xil_defaultlib.xup_xnor2
+Compiling module xil_defaultlib.full_adder_1_bit_xup_xnor2_0_0
 Compiling module xil_defaultlib.xup_xor2
 Compiling module xil_defaultlib.full_adder_1_bit_xup_xor2_0_0
-Compiling module xil_defaultlib.full_adder_1_bit_xup_xor2_1_0
 Compiling module xil_defaultlib.full_adder_1_bit
 Compiling module xil_defaultlib.full_adder_4_bit_full_adder_1_bi...
 Compiling module xil_defaultlib.full_adder_4_bit_full_adder_1_bi...
 Compiling module xil_defaultlib.full_adder_4_bit_full_adder_1_bi...
 Compiling module xil_defaultlib.full_adder_4_bit_full_adder_1_bi...
-Compiling module xil_defaultlib.xlconstant(CONST_VAL=1'b0)
-Compiling module xil_defaultlib.full_adder_4_bit_xlconstant_0_0
 Compiling module xil_defaultlib.full_adder_4_bit
 Compiling module xil_defaultlib.full_adder_4_bit_ver
 Compiling module xil_defaultlib.full_adder_4_bit_tb

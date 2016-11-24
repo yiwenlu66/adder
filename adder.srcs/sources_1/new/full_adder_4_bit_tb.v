@@ -22,11 +22,13 @@
 
 module full_adder_4_bit_tb;
 
+reg CI;
 reg [3:0] A;
 reg [3:0] B;
 wire [3:0] S;
 
 full_adder_4_bit_ver U1(
+    .CICI(CI),
     .AA(A), .BB(B),
     .SS(S)
     );
@@ -34,6 +36,7 @@ full_adder_4_bit_ver U1(
 parameter delay = 200;
 
 initial begin
+CI = 1'b0;
 A = 4'b0000;
 B = 4'b0000;
     repeat(16) begin
@@ -45,6 +48,6 @@ B = 4'b0000;
     end
 end
 
-initial $monitor($time, , , "A=%b B=%b S=%b", A, B, S);
+initial $monitor($time, , , "CI=%b A=%b B=%b S=%b", CI, A, B, S);
 
 endmodule

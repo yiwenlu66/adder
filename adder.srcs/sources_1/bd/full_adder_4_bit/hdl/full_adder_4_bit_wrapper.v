@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-//Date        : Thu Nov 24 01:24:32 2016
+//Date        : Thu Nov 24 10:51:14 2016
 //Host        : DESKTOP-82NDHVB running 64-bit major release  (build 9200)
 //Command     : generate_target full_adder_4_bit_wrapper.bd
 //Design      : full_adder_4_bit_wrapper
@@ -18,6 +18,7 @@ module full_adder_4_bit_wrapper
     B1,
     B2,
     B3,
+    CI,
     CO,
     S0,
     S1,
@@ -31,6 +32,7 @@ module full_adder_4_bit_wrapper
   input B1;
   input B2;
   input B3;
+  input CI;
   output CO;
   output S0;
   output S1;
@@ -45,6 +47,7 @@ module full_adder_4_bit_wrapper
   wire B1;
   wire B2;
   wire B3;
+  wire CI;
   wire CO;
   wire S0;
   wire S1;
@@ -60,6 +63,7 @@ module full_adder_4_bit_wrapper
         .B1(B1),
         .B2(B2),
         .B3(B3),
+        .CI(CI),
         .CO(CO),
         .S0(S0),
         .S1(S1),
