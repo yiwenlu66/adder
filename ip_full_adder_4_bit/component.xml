@@ -16,15 +16,12 @@
           <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_user_full_adder_1_bit_1_0__ref_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:fileSetRef>
-          <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_ip_xlconstant_1_1__ref_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:fileSetRef>
           <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>7d2c4266</spirit:value>
+            <spirit:value>670e1c44</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -38,15 +35,12 @@
           <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_user_full_adder_1_bit_1_0__ref_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:fileSetRef>
-          <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_xlconstant_1_1__ref_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:fileSetRef>
           <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>f3337e0b</spirit:value>
+            <spirit:value>7746aff0</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -171,6 +165,19 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
+        <spirit:name>CI</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
         <spirit:name>CO</spirit:name>
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
@@ -265,12 +272,6 @@
         <spirit:userFileType>CELL_NAME_full_adder_1_bit_3</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/full_adder_4_bit_xlconstant_0_0/full_adder_4_bit_xlconstant_0_0.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-        <spirit:userFileType>CELL_NAME_xlconstant_0</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>src/full_adder_4_bit_ooc.xdc</spirit:name>
         <spirit:userFileType>xdc</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
@@ -288,7 +289,7 @@
       <spirit:file>
         <spirit:name>src/full_adder_4_bit.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_5514aeae</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_5c1baf5b</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -297,16 +298,6 @@
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
           <xilinx:componentRef xsi:type="xilinx:componentRefType" xilinx:vendor="xilinx.com" xilinx:library="user" xilinx:name="full_adder_1_bit" xilinx:version="1.0">
-            <xilinx:mode xilinx:name="create_mode"/>
-          </xilinx:componentRef>
-        </xilinx:subCoreRef>
-      </spirit:vendorExtensions>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_ip_xlconstant_1_1__ref_view_fileset</spirit:name>
-      <spirit:vendorExtensions>
-        <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="xlconstant" xilinx:version="1.1">
             <xilinx:mode xilinx:name="create_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -339,12 +330,6 @@
         <spirit:userFileType>CELL_NAME_full_adder_1_bit_3</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/full_adder_4_bit_xlconstant_0_0/full_adder_4_bit_xlconstant_0_0.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-        <spirit:userFileType>CELL_NAME_xlconstant_0</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>src/full_adder_4_bit.hwdef</spirit:name>
         <spirit:userFileType>hwdef</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
@@ -360,16 +345,6 @@
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
           <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="user" xilinx:name="full_adder_1_bit" xilinx:version="1.0">
-            <xilinx:mode xilinx:name="create_mode"/>
-          </xilinx:componentRef>
-        </xilinx:subCoreRef>
-      </spirit:vendorExtensions>
-    </spirit:fileSet>
-    <spirit:fileSet>
-      <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_xlconstant_1_1__ref_view_fileset</spirit:name>
-      <spirit:vendorExtensions>
-        <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="xlconstant" xilinx:version="1.1">
             <xilinx:mode xilinx:name="create_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -403,15 +378,15 @@
       <xilinx:displayName>full_adder_4_bit_v1_0</xilinx:displayName>
       <xilinx:definitionSource>IPI</xilinx:definitionSource>
       <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2016-11-23T17:24:46Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2016-11-24T02:56:00Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="xilinx.com:user:full_adder_4_bit:1.0_ARCHIVE_LOCATION">C:/Users/peter/adder/ip_full_adder_4_bit</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2016.3</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="43942f1f"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="cb30c9df"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="d5c16fd0"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="db6b27b1"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="376d7312"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
