@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Nov 23 21:48:39 2016" VIVADOVERSION="2016.3">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Nov 24 10:41:19 2016" VIVADOVERSION="2016.3">
 
   <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="full_adder_1_bit" PACKAGE="cpg236" SPEEDGRADE="-1"/>
 
@@ -18,13 +18,13 @@
     </PORT>
     <PORT DIR="I" NAME="CI" SIGIS="undef" SIGNAME="External_Ports_CI">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="xup_xor2_1" PORT="b"/>
         <CONNECTION INSTANCE="xup_nand2_0" PORT="b"/>
+        <CONNECTION INSTANCE="xup_inv_0" PORT="a"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="S" SIGIS="undef" SIGNAME="xup_xor2_1_y">
+    <PORT DIR="O" NAME="S" SIGIS="undef" SIGNAME="xup_xnor2_0_y">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="xup_xor2_1" PORT="y"/>
+        <CONNECTION INSTANCE="xup_xnor2_0" PORT="y"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" NAME="CO" SIGIS="undef" SIGNAME="xup_nand2_1_y">
@@ -37,6 +37,27 @@
   <EXTERNALINTERFACES/>
 
   <MODULES>
+    <MODULE FULLNAME="/xup_inv_0" HWVERSION="1.0" INSTANCE="xup_inv_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xup_inv" VLNV="xilinx.com:xup:xup_inv:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DELAY" VALUE="3"/>
+        <PARAMETER NAME="Component_Name" VALUE="full_adder_1_bit_xup_inv_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="External_Ports_CI">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CI"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y" SIGIS="undef" SIGNAME="xup_inv_0_y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xup_xnor2_0" PORT="b"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
     <MODULE FULLNAME="/xup_nand2_0" HWVERSION="1.0" INSTANCE="xup_nand2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xup_nand2" VLNV="xilinx.com:xup:xup_nand2:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
@@ -115,6 +136,32 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
+    <MODULE FULLNAME="/xup_xnor2_0" HWVERSION="1.0" INSTANCE="xup_xnor2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xup_xnor2" VLNV="xilinx.com:xup:xup_xnor2:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DELAY" VALUE="3"/>
+        <PARAMETER NAME="Component_Name" VALUE="full_adder_1_bit_xup_xnor2_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="xup_xor2_0_y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xup_xor2_0" PORT="y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="xup_inv_0_y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xup_inv_0" PORT="y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="y" SIGIS="undef" SIGNAME="xup_xnor2_0_y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="S"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
     <MODULE FULLNAME="/xup_xor2_0" HWVERSION="1.0" INSTANCE="xup_xor2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xup_xor2" VLNV="xilinx.com:xup:xup_xor2:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
@@ -135,34 +182,8 @@
         </PORT>
         <PORT DIR="O" NAME="y" SIGIS="undef" SIGNAME="xup_xor2_0_y">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xup_xor2_1" PORT="a"/>
             <CONNECTION INSTANCE="xup_nand2_0" PORT="a"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE FULLNAME="/xup_xor2_1" HWVERSION="1.0" INSTANCE="xup_xor2_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xup_xor2" VLNV="xilinx.com:xup:xup_xor2:1.0">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="DELAY" VALUE="3"/>
-        <PARAMETER NAME="Component_Name" VALUE="full_adder_1_bit_xup_xor2_1_0"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="I" NAME="a" SIGIS="undef" SIGNAME="xup_xor2_0_y">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="xup_xor2_0" PORT="y"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="b" SIGIS="undef" SIGNAME="External_Ports_CI">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="CI"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="y" SIGIS="undef" SIGNAME="xup_xor2_1_y">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="S"/>
+            <CONNECTION INSTANCE="xup_xnor2_0" PORT="a"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

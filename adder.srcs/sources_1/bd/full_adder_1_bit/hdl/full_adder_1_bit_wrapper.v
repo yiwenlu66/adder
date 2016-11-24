@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-//Date        : Wed Nov 23 21:48:39 2016
+//Date        : Thu Nov 24 10:41:19 2016
 //Host        : DESKTOP-82NDHVB running 64-bit major release  (build 9200)
 //Command     : generate_target full_adder_1_bit_wrapper.bd
 //Design      : full_adder_1_bit_wrapper

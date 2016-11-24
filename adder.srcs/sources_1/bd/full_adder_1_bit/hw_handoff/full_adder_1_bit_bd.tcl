@@ -161,6 +161,9 @@ proc create_root_design { parentCell } {
   set CO [ create_bd_port -dir O CO ]
   set S [ create_bd_port -dir O S ]
 
+  # Create instance: xup_inv_0, and set properties
+  set xup_inv_0 [ create_bd_cell -type ip -vlnv xilinx.com:xup:xup_inv:1.0 xup_inv_0 ]
+
   # Create instance: xup_nand2_0, and set properties
   set xup_nand2_0 [ create_bd_cell -type ip -vlnv xilinx.com:xup:xup_nand2:1.0 xup_nand2_0 ]
 
@@ -170,21 +173,22 @@ proc create_root_design { parentCell } {
   # Create instance: xup_nand2_2, and set properties
   set xup_nand2_2 [ create_bd_cell -type ip -vlnv xilinx.com:xup:xup_nand2:1.0 xup_nand2_2 ]
 
+  # Create instance: xup_xnor2_0, and set properties
+  set xup_xnor2_0 [ create_bd_cell -type ip -vlnv xilinx.com:xup:xup_xnor2:1.0 xup_xnor2_0 ]
+
   # Create instance: xup_xor2_0, and set properties
   set xup_xor2_0 [ create_bd_cell -type ip -vlnv xilinx.com:xup:xup_xor2:1.0 xup_xor2_0 ]
-
-  # Create instance: xup_xor2_1, and set properties
-  set xup_xor2_1 [ create_bd_cell -type ip -vlnv xilinx.com:xup:xup_xor2:1.0 xup_xor2_1 ]
 
   # Create port connections
   connect_bd_net -net A_1 [get_bd_ports A] [get_bd_pins xup_nand2_2/a] [get_bd_pins xup_xor2_0/a]
   connect_bd_net -net B_1 [get_bd_ports B] [get_bd_pins xup_nand2_2/b] [get_bd_pins xup_xor2_0/b]
-  connect_bd_net -net CI_1 [get_bd_ports CI] [get_bd_pins xup_nand2_0/b] [get_bd_pins xup_xor2_1/b]
+  connect_bd_net -net CI_1 [get_bd_ports CI] [get_bd_pins xup_inv_0/a] [get_bd_pins xup_nand2_0/b]
+  connect_bd_net -net xup_inv_0_y [get_bd_pins xup_inv_0/y] [get_bd_pins xup_xnor2_0/b]
   connect_bd_net -net xup_nand2_0_y [get_bd_pins xup_nand2_0/y] [get_bd_pins xup_nand2_1/a]
   connect_bd_net -net xup_nand2_1_y [get_bd_ports CO] [get_bd_pins xup_nand2_1/y]
   connect_bd_net -net xup_nand2_2_y [get_bd_pins xup_nand2_1/b] [get_bd_pins xup_nand2_2/y]
-  connect_bd_net -net xup_xor2_0_y [get_bd_pins xup_nand2_0/a] [get_bd_pins xup_xor2_0/y] [get_bd_pins xup_xor2_1/a]
-  connect_bd_net -net xup_xor2_1_y [get_bd_ports S] [get_bd_pins xup_xor2_1/y]
+  connect_bd_net -net xup_xnor2_0_y [get_bd_ports S] [get_bd_pins xup_xnor2_0/y]
+  connect_bd_net -net xup_xor2_0_y [get_bd_pins xup_nand2_0/a] [get_bd_pins xup_xnor2_0/a] [get_bd_pins xup_xor2_0/y]
 
   # Create address segments
 
@@ -194,23 +198,25 @@ proc create_root_design { parentCell } {
 #  -string -flagsOSRD
 preplace port A -pg 1 -y -290 -defaultsOSRD
 preplace port B -pg 1 -y -200 -defaultsOSRD
-preplace port CI -pg 1 -y -90 -defaultsOSRD
+preplace port CI -pg 1 -y -110 -defaultsOSRD
 preplace port S -pg 1 -y -250 -defaultsOSRD
 preplace port CO -pg 1 -y -50 -defaultsOSRD
-preplace inst xup_nand2_0 -pg 1 -lvl 2 -y -120 -defaultsOSRD
-preplace inst xup_nand2_1 -pg 1 -lvl 3 -y -50 -defaultsOSRD
-preplace inst xup_nand2_2 -pg 1 -lvl 1 -y 20 -defaultsOSRD
+preplace inst xup_nand2_0 -pg 1 -lvl 4 -y -120 -defaultsOSRD
+preplace inst xup_nand2_1 -pg 1 -lvl 5 -y -50 -defaultsOSRD
+preplace inst xup_nand2_2 -pg 1 -lvl 2 -y 20 -defaultsOSRD
+preplace inst xup_inv_0 -pg 1 -lvl 3 -y -240 -defaultsOSRD
 preplace inst xup_xor2_0 -pg 1 -lvl 1 -y -290 -defaultsOSRD
-preplace inst xup_xor2_1 -pg 1 -lvl 2 -y -250 -defaultsOSRD
-preplace netloc A_1 1 0 1 -70
-preplace netloc CI_1 1 0 2 -50J -110 240
-preplace netloc xup_xor2_1_y 1 2 2 NJ -250 N
-preplace netloc xup_xor2_0_y 1 1 1 230
-preplace netloc xup_nand2_2_y 1 1 2 NJ 20 450
-preplace netloc B_1 1 0 1 -60
-preplace netloc xup_nand2_1_y 1 3 1 N
-preplace netloc xup_nand2_0_y 1 2 1 450
-levelinfo -pg 1 -90 150 370 540 820 -top -360 -bot 110
+preplace inst xup_xnor2_0 -pg 1 -lvl 4 -y -250 -defaultsOSRD
+preplace netloc A_1 1 0 2 -70 10 N
+preplace netloc xup_xnor2_0_y 1 4 2 NJ -250 N
+preplace netloc CI_1 1 0 4 NJ -110 NJ -110 320 -110 N
+preplace netloc xup_xor2_0_y 1 1 3 N -290 N -290 570
+preplace netloc xup_inv_0_y 1 3 1 N
+preplace netloc xup_nand2_2_y 1 2 3 NJ 20 N 20 740
+preplace netloc B_1 1 0 2 -60 30 N
+preplace netloc xup_nand2_1_y 1 5 1 N
+preplace netloc xup_nand2_0_y 1 4 1 740
+levelinfo -pg 1 -90 70 240 490 660 820 920 -top -470 -bot 110
 ",
 }
 

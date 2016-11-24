@@ -19,12 +19,18 @@
           <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_xup_xup_nand2_1_0__ref_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_xup_xup_inv_1_0__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_xup_xup_xnor2_1_0__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
           <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>ef0e3beb</spirit:value>
+            <spirit:value>5f4e6b4e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -41,12 +47,18 @@
           <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_xup_xup_nand2_1_0__ref_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_xup_xup_inv_1_0__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_xup_xup_xnor2_1_0__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
           <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>da457030</spirit:value>
+            <spirit:value>25202aeb</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -143,12 +155,6 @@
         <spirit:userFileType>CELL_NAME_xup_xor2_0</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/full_adder_1_bit_xup_xor2_1_0/full_adder_1_bit_xup_xor2_1_0.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-        <spirit:userFileType>CELL_NAME_xup_xor2_1</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>src/full_adder_1_bit_xup_nand2_0_0/full_adder_1_bit_xup_nand2_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
@@ -165,6 +171,18 @@
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_xup_nand2_2</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/full_adder_1_bit_xup_inv_0_0/full_adder_1_bit_xup_inv_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_xup_inv_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/full_adder_1_bit_xup_xnor2_0_0/full_adder_1_bit_xup_xnor2_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_xup_xnor2_0</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>src/full_adder_1_bit_ooc.xdc</spirit:name>
@@ -184,7 +202,7 @@
       <spirit:file>
         <spirit:name>src/full_adder_1_bit.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_b26c1f76</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_40b7d07c</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -209,18 +227,32 @@
       </spirit:vendorExtensions>
     </spirit:fileSet>
     <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_xup_xup_inv_1_0__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="xup" xilinx:name="xup_inv" xilinx:version="1.0">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_xup_xup_xnor2_1_0__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="xup" xilinx:name="xup_xnor2" xilinx:version="1.0">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
         <spirit:name>src/full_adder_1_bit_xup_xor2_0_0/full_adder_1_bit_xup_xor2_0_0.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_xup_xor2_0</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/full_adder_1_bit_xup_xor2_1_0/full_adder_1_bit_xup_xor2_1_0.xci</spirit:name>
-        <spirit:userFileType>xci</spirit:userFileType>
-        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-        <spirit:userFileType>CELL_NAME_xup_xor2_1</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>src/full_adder_1_bit_xup_nand2_0_0/full_adder_1_bit_xup_nand2_0_0.xci</spirit:name>
@@ -239,6 +271,18 @@
         <spirit:userFileType>xci</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
         <spirit:userFileType>CELL_NAME_xup_nand2_2</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/full_adder_1_bit_xup_inv_0_0/full_adder_1_bit_xup_inv_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_xup_inv_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/full_adder_1_bit_xup_xnor2_0_0/full_adder_1_bit_xup_xnor2_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_xup_xnor2_0</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>src/full_adder_1_bit.hwdef</spirit:name>
@@ -272,6 +316,26 @@
       </spirit:vendorExtensions>
     </spirit:fileSet>
     <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_xup_xup_inv_1_0__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="xup" xilinx:name="xup_inv" xilinx:version="1.0">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_xup_xup_xnor2_1_0__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="xup" xilinx:name="xup_xnor2" xilinx:version="1.0">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
       <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
       <spirit:file>
         <spirit:name>xgui/full_adder_1_bit_v1_0.tcl</spirit:name>
@@ -299,14 +363,14 @@
       <xilinx:displayName>full_adder_1_bit_v1_0</xilinx:displayName>
       <xilinx:definitionSource>IPI</xilinx:definitionSource>
       <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2016-11-23T13:49:24Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2016-11-24T02:45:15Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
-        <xilinx:tag xilinx:name="xilinx.com:user:full_adder_1_bit:1.0_ARCHIVE_LOCATION">C:/Users/peter/adder/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="xilinx.com:user:full_adder_1_bit:1.0_ARCHIVE_LOCATION">C:/Users/peter/adder/ip_full_adder_1_bit</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2016.3</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="38fc8373"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="6d4d6565"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="e52a0afe"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="f8840197"/>
     </xilinx:packagingInfo>

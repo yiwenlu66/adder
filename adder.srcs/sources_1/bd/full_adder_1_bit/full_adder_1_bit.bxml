@@ -2,20 +2,12 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="full_adder_1_bit" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1479908919"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1479908919"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1479908919"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1479955280"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1479955280"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1479955280"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\full_adder_1_bit_xup_xor2_0_0\full_adder_1_bit_xup_xor2_0_0.xci" Type="IP">
         <Instance HierarchyPath="xup_xor2_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\full_adder_1_bit_xup_xor2_1_0\full_adder_1_bit_xup_xor2_1_0.xci" Type="IP">
-        <Instance HierarchyPath="xup_xor2_1"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -48,6 +40,22 @@
       </File>
       <File Name="hdl\full_adder_1_bit.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\full_adder_1_bit_xup_inv_0_0\full_adder_1_bit_xup_inv_0_0.xci" Type="IP">
+        <Instance HierarchyPath="xup_inv_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\full_adder_1_bit_xup_xnor2_0_0\full_adder_1_bit_xup_xnor2_0_0.xci" Type="IP">
+        <Instance HierarchyPath="xup_xnor2_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>

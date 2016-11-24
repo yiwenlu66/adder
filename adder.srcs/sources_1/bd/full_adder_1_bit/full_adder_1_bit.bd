@@ -69,13 +69,6 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>xup_xor2_1</spirit:instanceName>
-        <spirit:componentRef spirit:library="xup" spirit:name="xup_xor2" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">full_adder_1_bit_xup_xor2_1_0</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
         <spirit:instanceName>xup_nand2_0</spirit:instanceName>
         <spirit:componentRef spirit:library="xup" spirit:name="xup_nand2" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
@@ -94,6 +87,20 @@
         <spirit:componentRef spirit:library="xup" spirit:name="xup_nand2" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">full_adder_1_bit_xup_nand2_2_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xup_inv_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="xup_inv" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">full_adder_1_bit_xup_inv_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xup_xnor2_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="xup" spirit:name="xup_xnor2" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">full_adder_1_bit_xup_xnor2_0_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -116,16 +123,10 @@
         <spirit:internalPortReference spirit:componentRef="xup_nand2_1" spirit:portRef="b"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>CI_1</spirit:name>
-        <spirit:externalPortReference spirit:portRef="CI"/>
-        <spirit:internalPortReference spirit:componentRef="xup_xor2_1" spirit:portRef="b"/>
-        <spirit:internalPortReference spirit:componentRef="xup_nand2_0" spirit:portRef="b"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
         <spirit:name>xup_xor2_0_y</spirit:name>
         <spirit:internalPortReference spirit:componentRef="xup_xor2_0" spirit:portRef="y"/>
-        <spirit:internalPortReference spirit:componentRef="xup_xor2_1" spirit:portRef="a"/>
         <spirit:internalPortReference spirit:componentRef="xup_nand2_0" spirit:portRef="a"/>
+        <spirit:internalPortReference spirit:componentRef="xup_xnor2_0" spirit:portRef="a"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>xup_nand2_0_y</spirit:name>
@@ -138,9 +139,20 @@
         <spirit:externalPortReference spirit:portRef="CO"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>xup_xor2_1_y</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="xup_xor2_1" spirit:portRef="y"/>
+        <spirit:name>CI_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="CI"/>
+        <spirit:internalPortReference spirit:componentRef="xup_nand2_0" spirit:portRef="b"/>
+        <spirit:internalPortReference spirit:componentRef="xup_inv_0" spirit:portRef="a"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xup_xnor2_0_y</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xup_xnor2_0" spirit:portRef="y"/>
         <spirit:externalPortReference spirit:portRef="S"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xup_inv_0_y</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xup_inv_0" spirit:portRef="y"/>
+        <spirit:internalPortReference spirit:componentRef="xup_xnor2_0" spirit:portRef="b"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
   </spirit:design>
