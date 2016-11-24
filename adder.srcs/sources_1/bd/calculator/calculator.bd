@@ -22,7 +22,7 @@
       </spirit:views>
       <spirit:ports>
         <spirit:port>
-          <spirit:name>SGN_M</spirit:name>
+          <spirit:name>M0</spirit:name>
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
           </spirit:wire>
@@ -34,13 +34,7 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>M0</spirit:name>
-          <spirit:wire>
-            <spirit:direction>in</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>SGN_N</spirit:name>
+          <spirit:name>SGN_M</spirit:name>
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
           </spirit:wire>
@@ -58,13 +52,19 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
+          <spirit:name>SGN_N</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
           <spirit:name>SGN_S</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>S2</spirit:name>
+          <spirit:name>S0</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
           </spirit:wire>
@@ -76,7 +76,7 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>S0</spirit:name>
+          <spirit:name>S2</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
           </spirit:wire>
@@ -91,6 +91,21 @@
     <spirit:name>calculator_imp</spirit:name>
     <spirit:version>1.00.a</spirit:version>
     <spirit:componentInstances>
+      <spirit:componentInstance>
+        <spirit:instanceName>full_adder_4_bit_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="full_adder_4_bit" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">calculator_full_adder_4_bit_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xlconstant_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="xlconstant" spirit:vendor="xilinx.com" spirit:version="1.1"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">calculator_xlconstant_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CONST_VAL">0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
       <spirit:componentInstance>
         <spirit:instanceName>complement_0</spirit:instanceName>
         <spirit:componentRef spirit:library="user" spirit:name="complement" spirit:vendor="xilinx.com" spirit:version="1.0"/>
@@ -110,21 +125,6 @@
         <spirit:componentRef spirit:library="user" spirit:name="complement" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">calculator_complement_2_0</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>full_adder_4_bit_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="full_adder_4_bit" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">calculator_full_adder_4_bit_0_0</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
-        <spirit:instanceName>xlconstant_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="ip" spirit:name="xlconstant" spirit:vendor="xilinx.com" spirit:version="1.1"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">calculator_xlconstant_0_0</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="CONST_VAL">0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -147,11 +147,11 @@
       <spirit:adHocConnection>
         <spirit:name>xlconstant_0_dout</spirit:name>
         <spirit:internalPortReference spirit:componentRef="xlconstant_0" spirit:portRef="dout"/>
+        <spirit:internalPortReference spirit:componentRef="full_adder_4_bit_0" spirit:portRef="CI"/>
         <spirit:internalPortReference spirit:componentRef="complement_0" spirit:portRef="A2"/>
         <spirit:internalPortReference spirit:componentRef="complement_0" spirit:portRef="A3"/>
         <spirit:internalPortReference spirit:componentRef="complement_2" spirit:portRef="A2"/>
         <spirit:internalPortReference spirit:componentRef="complement_2" spirit:portRef="A3"/>
-        <spirit:internalPortReference spirit:componentRef="full_adder_4_bit_0" spirit:portRef="CI"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>N1_1</spirit:name>
@@ -226,9 +226,9 @@
       <spirit:adHocConnection>
         <spirit:name>full_adder_4_bit_0_S3</spirit:name>
         <spirit:internalPortReference spirit:componentRef="full_adder_4_bit_0" spirit:portRef="S3"/>
+        <spirit:externalPortReference spirit:portRef="SGN_S"/>
         <spirit:internalPortReference spirit:componentRef="complement_1" spirit:portRef="A3"/>
         <spirit:internalPortReference spirit:componentRef="complement_1" spirit:portRef="COMP"/>
-        <spirit:externalPortReference spirit:portRef="SGN_S"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>complement_1_Y0</spirit:name>

@@ -1,7 +1,7 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
-//Date        : Thu Nov 24 11:26:27 2016
+//Date        : Thu Nov 24 14:38:33 2016
 //Host        : DESKTOP-82NDHVB running 64-bit major release  (build 9200)
 //Command     : generate_target complement.bd
 //Design      : complement
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "complement,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=complement,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=9,numReposBlks=9,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=1,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "complement.hwdef" *) 
+(* CORE_GENERATION_INFO = "complement,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=complement,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=6,numReposBlks=6,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=1,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "complement.hwdef" *) 
 module complement
    (A0,
     A1,
@@ -40,9 +40,6 @@ module complement
   wire full_adder_4_bit_0_S2;
   wire full_adder_4_bit_0_S3;
   wire [0:0]xlconstant_1_dout;
-  wire [0:0]xlconstant_2_dout;
-  wire [0:0]xlconstant_3_dout;
-  wire [0:0]xlconstant_4_dout;
   wire xup_xor2_0_y;
   wire xup_xor2_1_y;
   wire xup_xor2_2_y;
@@ -60,25 +57,19 @@ module complement
   complement_full_adder_4_bit_0_0 full_adder_4_bit_0
        (.A0(COMP_1),
         .A1(xlconstant_1_dout),
-        .A2(xlconstant_2_dout),
-        .A3(xlconstant_3_dout),
+        .A2(xlconstant_1_dout),
+        .A3(xlconstant_1_dout),
         .B0(xup_xor2_0_y),
         .B1(xup_xor2_1_y),
         .B2(xup_xor2_2_y),
         .B3(xup_xor2_3_y),
-        .CI(xlconstant_4_dout),
+        .CI(xlconstant_1_dout),
         .S0(full_adder_4_bit_0_S0),
         .S1(full_adder_4_bit_0_S1),
         .S2(full_adder_4_bit_0_S2),
         .S3(full_adder_4_bit_0_S3));
   complement_xlconstant_1_0 xlconstant_1
        (.dout(xlconstant_1_dout));
-  complement_xlconstant_2_0 xlconstant_2
-       (.dout(xlconstant_2_dout));
-  complement_xlconstant_3_0 xlconstant_3
-       (.dout(xlconstant_3_dout));
-  complement_xlconstant_4_0 xlconstant_4
-       (.dout(xlconstant_4_dout));
   complement_xup_xor2_0_0 xup_xor2_0
        (.a(A0_1),
         .b(COMP_1),

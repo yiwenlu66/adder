@@ -25,9 +25,6 @@ vlog -work xil_defaultlib  -v2k5 \
 "../../../bd/complement/ip/complement_full_adder_4_bit_0_0/sim/complement_full_adder_4_bit_0_0.v" \
 "../../../bd/complement/ipshared/e147/xlconstant.v" \
 "../../../bd/complement/ip/complement_xlconstant_1_0/sim/complement_xlconstant_1_0.v" \
-"../../../bd/complement/ip/complement_xlconstant_2_0/sim/complement_xlconstant_2_0.v" \
-"../../../bd/complement/ip/complement_xlconstant_3_0/sim/complement_xlconstant_3_0.v" \
-"../../../bd/complement/ip/complement_xlconstant_4_0/sim/complement_xlconstant_4_0.v" \
 "../../../bd/complement/hdl/complement.v" \
 "../../../bd/complement/ip/complement_xup_xor2_0_0/sim/complement_xup_xor2_0_0.v" \
 "../../../bd/complement/ip/complement_xup_xor2_1_0/sim/complement_xup_xor2_1_0.v" \

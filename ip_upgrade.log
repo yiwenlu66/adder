@@ -1,6 +1,69 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Thu Nov 24 14:39:49 2016
+| Host         : DESKTOP-82NDHVB running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'calculator_complement_2_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of calculator_complement_2_0 (xilinx.com:user:complement:1.0 (Rev. 2)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Thu Nov 24 14:39:49 2016
+| Host         : DESKTOP-82NDHVB running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'calculator_complement_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of calculator_complement_1_0 (xilinx.com:user:complement:1.0 (Rev. 2)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Thu Nov 24 14:39:49 2016
+| Host         : DESKTOP-82NDHVB running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'calculator_complement_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of calculator_complement_0_0 (xilinx.com:user:complement:1.0 (Rev. 2)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
 | Date         : Thu Nov 24 10:51:06 2016
 | Host         : DESKTOP-82NDHVB running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

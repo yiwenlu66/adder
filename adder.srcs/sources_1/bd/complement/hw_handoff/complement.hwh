@@ -1,9 +1,38 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Nov 24 11:26:29 2016" VIVADOVERSION="2016.3">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Nov 24 14:38:35 2016" VIVADOVERSION="2016.3">
 
   <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="complement" PACKAGE="cpg236" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
+    <PORT DIR="O" NAME="Y0" SIGIS="undef" SIGNAME="full_adder_4_bit_0_S0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="S0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Y1" SIGIS="undef" SIGNAME="full_adder_4_bit_0_S1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="S1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Y2" SIGIS="undef" SIGNAME="full_adder_4_bit_0_S2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="S2"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Y3" SIGIS="undef" SIGNAME="full_adder_4_bit_0_S3">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="S3"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="COMP" SIGIS="undef" SIGNAME="External_Ports_COMP">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="A0"/>
+        <CONNECTION INSTANCE="xup_xor2_3" PORT="b"/>
+        <CONNECTION INSTANCE="xup_xor2_2" PORT="b"/>
+        <CONNECTION INSTANCE="xup_xor2_1" PORT="b"/>
+        <CONNECTION INSTANCE="xup_xor2_0" PORT="b"/>
+      </CONNECTIONS>
+    </PORT>
     <PORT DIR="I" NAME="A3" SIGIS="undef" SIGNAME="External_Ports_A3">
       <CONNECTIONS>
         <CONNECTION INSTANCE="xup_xor2_3" PORT="a"/>
@@ -22,35 +51,6 @@
     <PORT DIR="I" NAME="A0" SIGIS="undef" SIGNAME="External_Ports_A0">
       <CONNECTIONS>
         <CONNECTION INSTANCE="xup_xor2_0" PORT="a"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="Y3" SIGIS="undef" SIGNAME="full_adder_4_bit_0_S3">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="S3"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="Y2" SIGIS="undef" SIGNAME="full_adder_4_bit_0_S2">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="S2"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="Y1" SIGIS="undef" SIGNAME="full_adder_4_bit_0_S1">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="S1"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="Y0" SIGIS="undef" SIGNAME="full_adder_4_bit_0_S0">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="S0"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="COMP" SIGIS="undef" SIGNAME="External_Ports_COMP">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="A0"/>
-        <CONNECTION INSTANCE="xup_xor2_3" PORT="b"/>
-        <CONNECTION INSTANCE="xup_xor2_2" PORT="b"/>
-        <CONNECTION INSTANCE="xup_xor2_1" PORT="b"/>
-        <CONNECTION INSTANCE="xup_xor2_0" PORT="b"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -75,14 +75,14 @@
             <CONNECTION INSTANCE="xlconstant_1" PORT="dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="A2" SIGIS="undef" SIGNAME="xlconstant_2_dout">
+        <PORT DIR="I" NAME="A2" SIGIS="undef" SIGNAME="xlconstant_1_dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlconstant_2" PORT="dout"/>
+            <CONNECTION INSTANCE="xlconstant_1" PORT="dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="A3" SIGIS="undef" SIGNAME="xlconstant_3_dout">
+        <PORT DIR="I" NAME="A3" SIGIS="undef" SIGNAME="xlconstant_1_dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlconstant_3" PORT="dout"/>
+            <CONNECTION INSTANCE="xlconstant_1" PORT="dout"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="B0" SIGIS="undef" SIGNAME="xup_xor2_0_y">
@@ -105,9 +105,9 @@
             <CONNECTION INSTANCE="xup_xor2_3" PORT="y"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="CI" SIGIS="undef" SIGNAME="xlconstant_4_dout">
+        <PORT DIR="I" NAME="CI" SIGIS="undef" SIGNAME="xlconstant_1_dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="xlconstant_4" PORT="dout"/>
+            <CONNECTION INSTANCE="xlconstant_1" PORT="dout"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="CO" SIGIS="undef"/>
@@ -146,56 +146,8 @@
         <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_1_dout">
           <CONNECTIONS>
             <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="A1"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE FULLNAME="/xlconstant_2" HWVERSION="1.1" INSTANCE="xlconstant_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="CONST_VAL" VALUE="0"/>
-        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="Component_Name" VALUE="complement_xlconstant_2_0"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_2_dout">
-          <CONNECTIONS>
             <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="A2"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE FULLNAME="/xlconstant_3" HWVERSION="1.1" INSTANCE="xlconstant_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="CONST_VAL" VALUE="0"/>
-        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="Component_Name" VALUE="complement_xlconstant_3_0"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_3_dout">
-          <CONNECTIONS>
             <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="A3"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
-    <MODULE FULLNAME="/xlconstant_4" HWVERSION="1.1" INSTANCE="xlconstant_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="CONST_VAL" VALUE="0"/>
-        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="Component_Name" VALUE="complement_xlconstant_4_0"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_4_dout">
-          <CONNECTIONS>
             <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="CI"/>
           </CONNECTIONS>
         </PORT>

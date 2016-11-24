@@ -2,9 +2,9 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="calculator" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1479963289"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1479963289"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1479963289"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1479969604"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1479969604"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1479969604"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\calculator_complement_0_0\calculator_complement_0_0.xci" Type="IP">
         <Instance HierarchyPath="complement_0"/>

@@ -174,24 +174,6 @@ proc create_root_design { parentCell } {
 CONFIG.CONST_VAL {0} \
  ] $xlconstant_1
 
-  # Create instance: xlconstant_2, and set properties
-  set xlconstant_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_2 ]
-  set_property -dict [ list \
-CONFIG.CONST_VAL {0} \
- ] $xlconstant_2
-
-  # Create instance: xlconstant_3, and set properties
-  set xlconstant_3 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_3 ]
-  set_property -dict [ list \
-CONFIG.CONST_VAL {0} \
- ] $xlconstant_3
-
-  # Create instance: xlconstant_4, and set properties
-  set xlconstant_4 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_4 ]
-  set_property -dict [ list \
-CONFIG.CONST_VAL {0} \
- ] $xlconstant_4
-
   # Create instance: xup_xor2_0, and set properties
   set xup_xor2_0 [ create_bd_cell -type ip -vlnv xilinx.com:xup:xup_xor2:1.0 xup_xor2_0 ]
 
@@ -214,10 +196,7 @@ CONFIG.CONST_VAL {0} \
   connect_bd_net -net full_adder_4_bit_0_S1 [get_bd_ports Y1] [get_bd_pins full_adder_4_bit_0/S1]
   connect_bd_net -net full_adder_4_bit_0_S2 [get_bd_ports Y2] [get_bd_pins full_adder_4_bit_0/S2]
   connect_bd_net -net full_adder_4_bit_0_S3 [get_bd_ports Y3] [get_bd_pins full_adder_4_bit_0/S3]
-  connect_bd_net -net xlconstant_1_dout [get_bd_pins full_adder_4_bit_0/A1] [get_bd_pins xlconstant_1/dout]
-  connect_bd_net -net xlconstant_2_dout [get_bd_pins full_adder_4_bit_0/A2] [get_bd_pins xlconstant_2/dout]
-  connect_bd_net -net xlconstant_3_dout [get_bd_pins full_adder_4_bit_0/A3] [get_bd_pins xlconstant_3/dout]
-  connect_bd_net -net xlconstant_4_dout [get_bd_pins full_adder_4_bit_0/CI] [get_bd_pins xlconstant_4/dout]
+  connect_bd_net -net xlconstant_1_dout [get_bd_pins full_adder_4_bit_0/A1] [get_bd_pins full_adder_4_bit_0/A2] [get_bd_pins full_adder_4_bit_0/A3] [get_bd_pins full_adder_4_bit_0/CI] [get_bd_pins xlconstant_1/dout]
   connect_bd_net -net xup_xor2_0_y [get_bd_pins full_adder_4_bit_0/B0] [get_bd_pins xup_xor2_0/y]
   connect_bd_net -net xup_xor2_1_y [get_bd_pins full_adder_4_bit_0/B1] [get_bd_pins xup_xor2_1/y]
   connect_bd_net -net xup_xor2_2_y [get_bd_pins full_adder_4_bit_0/B2] [get_bd_pins xup_xor2_2/y]
@@ -229,42 +208,36 @@ CONFIG.CONST_VAL {0} \
   regenerate_bd_layout -layout_string {
    guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
 #  -string -flagsOSRD
-preplace port Y0 -pg 1 -y 80 -defaultsOSRD
-preplace port Y1 -pg 1 -y 60 -defaultsOSRD
-preplace port A0 -pg 1 -y 80 -defaultsOSRD
-preplace port Y2 -pg 1 -y 40 -defaultsOSRD
-preplace port A1 -pg 1 -y 60 -defaultsOSRD
-preplace port COMP -pg 1 -y -420 -defaultsOSRD
-preplace port Y3 -pg 1 -y 20 -defaultsOSRD
-preplace port A2 -pg 1 -y 40 -defaultsOSRD
-preplace port A3 -pg 1 -y 20 -defaultsOSRD
-preplace inst xlconstant_1 -pg 1 -lvl 2 -y -360 -defaultsOSRD
-preplace inst xup_xor2_0 -pg 1 -lvl 1 -y 100 -defaultsOSRD
-preplace inst xlconstant_2 -pg 1 -lvl 2 -y -270 -defaultsOSRD
-preplace inst xup_xor2_1 -pg 1 -lvl 1 -y 0 -defaultsOSRD
-preplace inst xlconstant_3 -pg 1 -lvl 2 -y -150 -defaultsOSRD
-preplace inst xup_xor2_2 -pg 1 -lvl 1 -y -120 -defaultsOSRD
-preplace inst xlconstant_4 -pg 1 -lvl 2 -y -70 -defaultsOSRD
-preplace inst xup_xor2_3 -pg 1 -lvl 1 -y -230 -defaultsOSRD
-preplace inst full_adder_4_bit_0 -pg 1 -lvl 3 -y -250 -defaultsOSRD
-preplace netloc full_adder_4_bit_0_S3 1 3 1 1020
-preplace netloc xlconstant_1_dout 1 2 1 790
-preplace netloc xlconstant_2_dout 1 2 1 790
-preplace netloc xup_xor2_1_y 1 1 2 NJ 0 830
-preplace netloc A3_1 1 0 1 20
-preplace netloc xup_xor2_0_y 1 1 2 NJ 100 820
-preplace netloc COMP_1 1 0 3 30J -420 NJ -420 830
-preplace netloc A2_1 1 0 1 40
-preplace netloc xup_xor2_2_y 1 1 2 330J -210 N
-preplace netloc A1_1 1 0 1 50
-preplace netloc xlconstant_4_dout 1 2 1 840
-preplace netloc full_adder_4_bit_0_S0 1 3 1 1050
-preplace netloc xup_xor2_3_y 1 1 2 330J -410 810
-preplace netloc A0_1 1 0 1 20
-preplace netloc full_adder_4_bit_0_S1 1 3 1 1040
-preplace netloc full_adder_4_bit_0_S2 1 3 1 1030
-preplace netloc xlconstant_3_dout 1 2 1 800
-levelinfo -pg 1 0 250 730 930 1410 -top -610 -bot 240
+preplace port Y0 -pg 1 -y 150 -defaultsOSRD
+preplace port A0 -pg 1 -y 140 -defaultsOSRD
+preplace port Y1 -pg 1 -y 170 -defaultsOSRD
+preplace port A1 -pg 1 -y 240 -defaultsOSRD
+preplace port Y2 -pg 1 -y 190 -defaultsOSRD
+preplace port A2 -pg 1 -y 340 -defaultsOSRD
+preplace port COMP -pg 1 -y 90 -defaultsOSRD
+preplace port Y3 -pg 1 -y 210 -defaultsOSRD
+preplace port A3 -pg 1 -y 440 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 1 -y 40 -defaultsOSRD
+preplace inst xup_xor2_0 -pg 1 -lvl 1 -y 150 -defaultsOSRD
+preplace inst xup_xor2_1 -pg 1 -lvl 1 -y 250 -defaultsOSRD
+preplace inst xup_xor2_2 -pg 1 -lvl 1 -y 350 -defaultsOSRD
+preplace inst xup_xor2_3 -pg 1 -lvl 1 -y 450 -defaultsOSRD
+preplace inst full_adder_4_bit_0 -pg 1 -lvl 2 -y 170 -defaultsOSRD
+preplace netloc full_adder_4_bit_0_S3 1 2 1 NJ
+preplace netloc xlconstant_1_dout 1 1 1 190
+preplace netloc xup_xor2_1_y 1 1 1 180
+preplace netloc A3_1 1 0 1 NJ
+preplace netloc xup_xor2_0_y 1 1 1 180
+preplace netloc COMP_1 1 0 2 20 90 NJ
+preplace netloc A2_1 1 0 1 NJ
+preplace netloc xup_xor2_2_y 1 1 1 200
+preplace netloc A1_1 1 0 1 NJ
+preplace netloc full_adder_4_bit_0_S0 1 2 1 NJ
+preplace netloc xup_xor2_3_y 1 1 1 210
+preplace netloc A0_1 1 0 1 NJ
+preplace netloc full_adder_4_bit_0_S1 1 2 1 NJ
+preplace netloc full_adder_4_bit_0_S2 1 2 1 NJ
+levelinfo -pg 1 0 100 300 410 -top 0 -bot 510
 ",
 }
 

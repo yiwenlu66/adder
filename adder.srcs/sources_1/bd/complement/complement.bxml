@@ -2,9 +2,9 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="complement" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1479957990"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1479957990"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1479957990"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1479969516"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1479969516"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1479969516"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\complement_full_adder_4_bit_0_0\complement_full_adder_4_bit_0_0.xci" Type="IP">
         <Instance HierarchyPath="full_adder_4_bit_0"/>
@@ -16,30 +16,6 @@
       </File>
       <File Name="ip\complement_xlconstant_1_0\complement_xlconstant_1_0.xci" Type="IP">
         <Instance HierarchyPath="xlconstant_1"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\complement_xlconstant_2_0\complement_xlconstant_2_0.xci" Type="IP">
-        <Instance HierarchyPath="xlconstant_2"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\complement_xlconstant_3_0\complement_xlconstant_3_0.xci" Type="IP">
-        <Instance HierarchyPath="xlconstant_3"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\complement_xlconstant_4_0\complement_xlconstant_4_0.xci" Type="IP">
-        <Instance HierarchyPath="xlconstant_4"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

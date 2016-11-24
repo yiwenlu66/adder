@@ -26,9 +26,6 @@ Compiling module xil_defaultlib.full_adder_4_bit
 Compiling module xil_defaultlib.complement_full_adder_4_bit_0_0
 Compiling module xil_defaultlib.xlconstant(CONST_VAL=1'b0)
 Compiling module xil_defaultlib.complement_xlconstant_1_0
-Compiling module xil_defaultlib.complement_xlconstant_2_0
-Compiling module xil_defaultlib.complement_xlconstant_3_0
-Compiling module xil_defaultlib.complement_xlconstant_4_0
 Compiling module xil_defaultlib.complement_xup_xor2_0_0
 Compiling module xil_defaultlib.complement_xup_xor2_1_0
 Compiling module xil_defaultlib.complement_xup_xor2_2_0

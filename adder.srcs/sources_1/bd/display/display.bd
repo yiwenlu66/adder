@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0x907FA5CC907FA5CC" bd:device="xc7a35tcpg236-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2016.3" bd:top="display" bd:version="1.00.a">
+
+  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>display</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:parameters>
+      <spirit:parameter>
+        <spirit:name>isTop</spirit:name>
+        <spirit:value spirit:format="bool" spirit:resolve="immediate">true</spirit:value>
+      </spirit:parameter>
+    </spirit:parameters>
+    <spirit:model>
+      <spirit:views>
+        <spirit:view>
+          <spirit:name>BlockDiagram</spirit:name>
+          <spirit:envIdentifier>:vivado.xilinx.com:</spirit:envIdentifier>
+          <spirit:hierarchyRef spirit:library="BlockDiagram" spirit:name="display_imp" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
+        </spirit:view>
+      </spirit:views>
+      <spirit:ports>
+        <spirit:port>
+          <spirit:name>SGN_M</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>SGN_N</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>N0</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>N1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>M1</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>M0</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>a</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>b</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>c</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>d</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>e</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>f</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>g</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+      </spirit:ports>
+    </spirit:model>
+  </spirit:component>
+
+  <spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>display_imp</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:componentInstances>
+      <spirit:componentInstance>
+        <spirit:instanceName>BCD2SEG7_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="XUP" spirit:name="BCD2SEG7" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">display_BCD2SEG7_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xlconstant_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="xlconstant" spirit:vendor="xilinx.com" spirit:version="1.1"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">display_xlconstant_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>xlconstant_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="xlconstant" spirit:vendor="xilinx.com" spirit:version="1.1"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">display_xlconstant_1_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CONST_VAL">0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>calculator_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="calculator" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">display_calculator_0_0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+    </spirit:componentInstances>
+    <spirit:adHocConnections>
+      <spirit:adHocConnection>
+        <spirit:name>SGN_M_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="SGN_M"/>
+        <spirit:internalPortReference spirit:componentRef="calculator_0" spirit:portRef="SGN_M"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>SGN_N_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="SGN_N"/>
+        <spirit:internalPortReference spirit:componentRef="calculator_0" spirit:portRef="SGN_N"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>N0_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="N0"/>
+        <spirit:internalPortReference spirit:componentRef="calculator_0" spirit:portRef="N0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>N1_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="N1"/>
+        <spirit:internalPortReference spirit:componentRef="calculator_0" spirit:portRef="N1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>M1_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="M1"/>
+        <spirit:internalPortReference spirit:componentRef="calculator_0" spirit:portRef="M1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>M0_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="M0"/>
+        <spirit:internalPortReference spirit:componentRef="calculator_0" spirit:portRef="M0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>calculator_0_S0</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="calculator_0" spirit:portRef="S0"/>
+        <spirit:internalPortReference spirit:componentRef="BCD2SEG7_0" spirit:portRef="BCD_A"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>calculator_0_S1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="calculator_0" spirit:portRef="S1"/>
+        <spirit:internalPortReference spirit:componentRef="BCD2SEG7_0" spirit:portRef="BCD_B"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>calculator_0_S2</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="calculator_0" spirit:portRef="S2"/>
+        <spirit:internalPortReference spirit:componentRef="BCD2SEG7_0" spirit:portRef="BCD_C"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xlconstant_0_dout</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xlconstant_0" spirit:portRef="dout"/>
+        <spirit:internalPortReference spirit:componentRef="BCD2SEG7_0" spirit:portRef="LT_n"/>
+        <spirit:internalPortReference spirit:componentRef="BCD2SEG7_0" spirit:portRef="RBI_n"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>xlconstant_1_dout</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="xlconstant_1" spirit:portRef="dout"/>
+        <spirit:internalPortReference spirit:componentRef="BCD2SEG7_0" spirit:portRef="BCD_D"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BCD2SEG7_0_a</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BCD2SEG7_0" spirit:portRef="a"/>
+        <spirit:externalPortReference spirit:portRef="a"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BCD2SEG7_0_b</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BCD2SEG7_0" spirit:portRef="b"/>
+        <spirit:externalPortReference spirit:portRef="b"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BCD2SEG7_0_c</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BCD2SEG7_0" spirit:portRef="c"/>
+        <spirit:externalPortReference spirit:portRef="c"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BCD2SEG7_0_d</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BCD2SEG7_0" spirit:portRef="d"/>
+        <spirit:externalPortReference spirit:portRef="d"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BCD2SEG7_0_e</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BCD2SEG7_0" spirit:portRef="e"/>
+        <spirit:externalPortReference spirit:portRef="e"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BCD2SEG7_0_f</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BCD2SEG7_0" spirit:portRef="f"/>
+        <spirit:externalPortReference spirit:portRef="f"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>BCD2SEG7_0_g</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="BCD2SEG7_0" spirit:portRef="g"/>
+        <spirit:externalPortReference spirit:portRef="g"/>
+      </spirit:adHocConnection>
+    </spirit:adHocConnections>
+  </spirit:design>
+
+</bd:repository>

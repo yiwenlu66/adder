@@ -1,0 +1,9 @@
+display.v,verilog,xil_defaultlib,../../../bd/display/hdl/display.v,
+calculator.v,verilog,xil_defaultlib,../../../bd/display/ipshared/080c/src/calculator.v,
+display_calculator_0_0.v,verilog,xil_defaultlib,../../../bd/display/ip/display_calculator_0_0_1/sim/display_calculator_0_0.v,
+BCD2SEG7.v,verilog,xil_defaultlib,../../../bd/display/ipshared/5a5d/src/BCD2SEG7.v,
+display_BCD2SEG7_0_0.v,verilog,xil_defaultlib,../../../bd/display/ip/display_BCD2SEG7_0_0/sim/display_BCD2SEG7_0_0.v,
+xlconstant.v,verilog,xil_defaultlib,../../../bd/display/ipshared/e147/xlconstant.v,
+display_xlconstant_0_0.v,verilog,xil_defaultlib,../../../bd/display/ip/display_xlconstant_0_0/sim/display_xlconstant_0_0.v,
+display_xlconstant_1_0.v,verilog,xil_defaultlib,../../../bd/display/ip/display_xlconstant_1_0/sim/display_xlconstant_1_0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

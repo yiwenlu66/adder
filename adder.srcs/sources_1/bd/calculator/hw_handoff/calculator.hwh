@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Nov 24 12:54:48 2016" VIVADOVERSION="2016.3">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Nov 24 14:40:04 2016" VIVADOVERSION="2016.3">
 
   <SYSTEMINFO ARCH="artix7" DEVICE="7a35t" NAME="calculator" PACKAGE="cpg236" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
-    <PORT DIR="I" NAME="SGN_M" SIGIS="undef" SIGNAME="External_Ports_SGN_M">
+    <PORT DIR="I" NAME="M0" SIGIS="undef" SIGNAME="External_Ports_M0">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="complement_0" PORT="COMP"/>
+        <CONNECTION INSTANCE="complement_0" PORT="A0"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="M1" SIGIS="undef" SIGNAME="External_Ports_M1">
@@ -14,14 +14,9 @@
         <CONNECTION INSTANCE="complement_0" PORT="A1"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="M0" SIGIS="undef" SIGNAME="External_Ports_M0">
+    <PORT DIR="I" NAME="SGN_M" SIGIS="undef" SIGNAME="External_Ports_SGN_M">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="complement_0" PORT="A0"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="SGN_N" SIGIS="undef" SIGNAME="External_Ports_SGN_N">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="complement_2" PORT="COMP"/>
+        <CONNECTION INSTANCE="complement_0" PORT="COMP"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="N1" SIGIS="undef" SIGNAME="External_Ports_N1">
@@ -34,14 +29,19 @@
         <CONNECTION INSTANCE="complement_2" PORT="A0"/>
       </CONNECTIONS>
     </PORT>
+    <PORT DIR="I" NAME="SGN_N" SIGIS="undef" SIGNAME="External_Ports_SGN_N">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="complement_2" PORT="COMP"/>
+      </CONNECTIONS>
+    </PORT>
     <PORT DIR="O" NAME="SGN_S" SIGIS="undef" SIGNAME="full_adder_4_bit_0_S3">
       <CONNECTIONS>
         <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="S3"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="S2" SIGIS="undef" SIGNAME="complement_1_Y2">
+    <PORT DIR="O" NAME="S0" SIGIS="undef" SIGNAME="complement_1_Y0">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="complement_1" PORT="Y2"/>
+        <CONNECTION INSTANCE="complement_1" PORT="Y0"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" NAME="S1" SIGIS="undef" SIGNAME="complement_1_Y1">
@@ -49,9 +49,9 @@
         <CONNECTION INSTANCE="complement_1" PORT="Y1"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="S0" SIGIS="undef" SIGNAME="complement_1_Y0">
+    <PORT DIR="O" NAME="S2" SIGIS="undef" SIGNAME="complement_1_Y2">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="complement_1" PORT="Y0"/>
+        <CONNECTION INSTANCE="complement_1" PORT="Y2"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -290,9 +290,9 @@
         </PORT>
         <PORT DIR="O" NAME="S3" SIGIS="undef" SIGNAME="full_adder_4_bit_0_S3">
           <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SGN_S"/>
             <CONNECTION INSTANCE="complement_1" PORT="A3"/>
             <CONNECTION INSTANCE="complement_1" PORT="COMP"/>
-            <CONNECTION INSTANCE="External_Ports" PORT="SGN_S"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -309,11 +309,11 @@
       <PORTS>
         <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
           <CONNECTIONS>
+            <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="CI"/>
             <CONNECTION INSTANCE="complement_0" PORT="A2"/>
             <CONNECTION INSTANCE="complement_0" PORT="A3"/>
             <CONNECTION INSTANCE="complement_2" PORT="A2"/>
             <CONNECTION INSTANCE="complement_2" PORT="A3"/>
-            <CONNECTION INSTANCE="full_adder_4_bit_0" PORT="CI"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
