@@ -19,6 +19,7 @@
     <Option Name="BoardPart" Val=""/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/ip_complement"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../mux21/74LSXX_LIB"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/ip_full_adder_1_bit"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/ip_full_adder_4_bit"/>
@@ -141,8 +142,13 @@
         </FileInfo>
         <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="ip/complement_xup_inv_1_0/complement_xup_inv_1_0.xci"/>
         <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="ip/complement_xup_inv_0_0/complement_xup_inv_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="hdl/complement.v"/>
         <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="ip/complement_full_adder_4_bit_0_0/complement_full_adder_4_bit_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="ip/complement_xup_inv_2_0/complement_xup_inv_2_0.xci"/>
+        <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="complement_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="hdl/complement.hwdef"/>
+        <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="hw_handoff/complement_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="hw_handoff/complement.hwh"/>
         <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="ip/complement_xup_inv_3_0/complement_xup_inv_3_0.xci"/>
         <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="ip/complement_xlconstant_4_0/complement_xlconstant_4_0.xci"/>
         <CompFileExtendedInfo CompFileName="complement.bd" FileRelPathName="ip/complement_xlconstant_0_0/complement_xlconstant_0_0.xci"/>
